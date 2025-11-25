@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-var std: Studio = Studio(name: "Studio Zen", modality: "Yoga", image: imageURL)
+var std: Estabelecimento = Estabelecimento(name: "Studio Zen", modality: "Yoga", image: imageURL)
 
 struct ExploreView: View {
     
@@ -31,6 +31,11 @@ struct ExploreView: View {
                 Text("Em Alta")
                     .font(.title2)
                     .fontWeight(.bold)
+                
+                HStack {
+                    CardView(studio: std)
+                    CardView(studio: std)
+                }
             }
             .padding()
             
@@ -41,7 +46,15 @@ struct ExploreView: View {
             }
             .padding()
             
+            Spacer()
             
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Settings", systemImage: "gear") {
+                    
+                }
+            }
         }
     }
 }

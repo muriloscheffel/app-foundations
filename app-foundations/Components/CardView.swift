@@ -11,7 +11,7 @@ let imageURL = URL(string: "https://pranayogastudio.com.br/wp-content/uploads/20
 
 struct CardView: View {
     
-    let studio: Studio
+    let studio: Estabelecimento
     
     var body: some View {
 
@@ -51,6 +51,6 @@ struct CardView: View {
 }
 
 #Preview {
-    var std: Studio = Studio(name: "Studio Zen", modality: "Yoga", image: imageURL)
+    var std: Estabelecimento = Estabelecimento(name: "Studio Zen", modality: "Yoga", image: imageURL)
     CardView(studio: std)
 }
