@@ -1,0 +1,36 @@
+//
+//  TabBar.swift
+//  app-foundations
+//
+//  Created by aluno-15 on 25/11/25.
+//
+
+import SwiftUI
+
+struct TabBar: View {
+    var body: some View {
+        TabView {
+            Tab("Explorar", systemImage: "list.bullet.rectangle.portrait.fill") {
+                NavigationStack {
+                    ExploreView()
+                }
+            }
+            
+            Tab("Mapa", systemImage: "person.fill") {
+                NavigationStack {
+                    MapView()
+                }
+            }
+            
+            Tab("Search", systemImage: "magnifyingglass") {
+                NavigationStack {
+                    
+                }
+            }
+        }
+    }
+}
+
+#Preview {
+    TabBar()
+}
