@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Studio: Identifiable {
+struct Estabelecimento: Identifiable {
     let id = UUID()
     let name: String
     let modality: String
