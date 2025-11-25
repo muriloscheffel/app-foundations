@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+
+
+var std: Studio = Studio(name: "Studio Zen", modality: "Yoga", image: imageURL)
+
 struct ExploreView: View {
     
     @State private var searchText: String = ""

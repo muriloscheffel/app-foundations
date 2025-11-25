@@ -7,32 +7,50 @@
 
 import SwiftUI
 
+let imageURL = URL(string: "https://pranayogastudio.com.br/wp-content/uploads/2025/05/DSCF0907-HDR-2-1024x683.jpg")
+
 struct CardView: View {
     
-    func acao() {}
-    var nome: String
-    var desc: String
+    let studio: Studio
     
     var body: some View {
-        Button {
-            acao()
-        } label: {
-            VStack(alignment: .leading) {
-                Text(nome)
-                    .foregroundStyle(.white)
-                Text(desc)
-                    .foregroundStyle(.white)
+
+            ZStack(alignment: .bottomLeading) {
+                AsyncImage(url: imageURL) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                } placeholder: {
+                    Color.gray.opacity(0.3)
+                }
+                .frame(width: 180, height: 100)
+                .clipped()
+                   
+                LinearGradient(
+                        colors: [.accent.opacity(1), .clear],
+                        startPoint: .bottom,
+                        endPoint: .center
+                )
+                
+                
+                VStack(alignment: .leading) {
+                    Text(studio.name)
+                        .foregroundStyle(.white)
+                        .font(Font.system(size: 20))
+                    Text(studio.modality)
+                        .foregroundStyle(.white)
+                        .font(Font.system(size: 12))
+                }
+                .padding([.leading, .bottom], 8)
                 
             }
-        }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                
-        )
+            .frame(width: 180, height: 100)
+            .cornerRadius(8)
+        
     }
 }
 
 #Preview {
-    CardView(nome: "oii", desc: "yoga")
+    var std: Studio = Studio(name: "Studio Zen", modality: "Yoga", image: imageURL)
+    CardView(studio: std)
 }
