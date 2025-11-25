@@ -16,13 +16,13 @@ struct TabBar: View {
                 }
             }
             
-            Tab("Mapa", systemImage: "person.fill") {
+            Tab("Mapa", systemImage: "map") {
                 NavigationStack {
                     MapView()
                 }
             }
             
-            Tab("Search", systemImage: "magnifyingglass") {
+            Tab("Modalidades", systemImage: "magnifyingglass") {
                 NavigationStack {
                     
                 }

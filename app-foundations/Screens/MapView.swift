@@ -6,10 +6,38 @@
 //
 
 import SwiftUI
+import MapKit
+
+struct Location: Identifiable {
+    let id = UUID()
+    let name: String
+    let coordinate: CLLocationCoordinate2D
+}
 
 struct MapView: View {
+    
+    @State private var cameraPosition: MapCameraPosition = .region(
+            MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: -30.0346, longitude: -51.2177),
+                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+            )
+        )
+        
+        // Lista de anotações
+        let annotations = [
+            Location(name: "Ponto A", coordinate: CLLocationCoordinate2D(latitude: -30.03, longitude: -51.20))
+        ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Map(position: $cameraPosition) {
+                    // Adicione anotações (pins) DENTRO do corpo da Map
+                    ForEach(annotations) { location in
+                        // MapMarker foi substituído por Map(Content)Marker no iOS 17+
+                        Marker(location.name, coordinate: location.coordinate)
+                    }
+                }
+                .mapStyle(.standard) // Opcional: Define o estilo do mapa
+                .ignoresSafeArea()
     }
 }
 
