@@ -8,8 +8,35 @@
 import SwiftUI
 
 struct ExploreView: View {
+    
+    @State private var searchText: String = ""
+    
     var body: some View {
-        ScrollView {
+        VStack {
+            VStack (alignment: .leading, spacing: 16){
+                Text("Descubra")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                
+                SearchBar(text: $searchText)
+                
+            }
+            .padding()
+            
+            VStack (alignment: .leading, spacing: 16){
+                Text("Em Alta")
+                    .font(.title2)
+                    .fontWeight(.bold)
+            }
+            .padding()
+            
+            VStack (alignment: .leading, spacing: 16){
+                Text("Favoritos")
+                    .font(.title2)
+                    .fontWeight(.bold)
+            }
+            .padding()
+            
             
         }
     }
