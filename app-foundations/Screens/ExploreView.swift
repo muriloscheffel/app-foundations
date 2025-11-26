@@ -15,6 +15,8 @@ struct ExploreView: View {
     
     @State private var searchText: String = ""
     
+    @State private var showSettings: Bool = false
+    
     var body: some View {
         VStack {
             VStack (alignment: .leading, spacing: 16){
@@ -49,10 +51,13 @@ struct ExploreView: View {
             Spacer()
             
         }
+        .sheet(isPresented: $showSettings, content: {
+            Preferencias()
+        })
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Settings", systemImage: "gear") {
-                    
+                    showSettings = true
                 }
             }
         }
