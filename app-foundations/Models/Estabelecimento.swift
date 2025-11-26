@@ -13,12 +13,12 @@ struct Estabelecimento: Identifiable {
     let name: String
     let modality: String
     let image: URL?
-    let endereco: String?
-    let avaliacao: Double?
-    let sobre: String?
-    let horario: String?
-    let oferece: String? // enum
-    let latitude: Double?
-    let longitude: Double?
-    let isFavorite: Bool?
+    let endereco: String? = nil
+    let avaliacao: Double? = nil
+    let sobre: String? = nil
+    let horario: String? = nil
+    let oferece: Oferecimentos? = nil
+    let latitude: Double? = nil
+    let longitude: Double? = nil
+    let isFavorite: Bool? = false
 }
