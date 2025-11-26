@@ -56,7 +56,7 @@ struct ExploreView: View {
         })
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Settings", systemImage: "gear") {
+                Button("Configurações", systemImage: "gear") {
                     showSettings = true
                 }
             }
