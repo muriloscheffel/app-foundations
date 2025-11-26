@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct SearchBar: View {
-   
+    
     @Binding var text: String
-
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 24, style: .continuous)
@@ -19,14 +20,16 @@ struct SearchBar: View {
                     RoundedRectangle(cornerRadius: 24, style: .continuous)
                         .fill(Color.white)
                 )
-
+            
             HStack {
-                TextField("Buscar modalidades...", text: $text)
-                    .padding(.leading, 16)
-                    .padding(.vertical, 10)
-
+                TextField("", text: $text, prompt: Text("Buscar modalidades...")
+                    .foregroundColor(colorScheme == .dark ? .black : .gray) )
+                .padding(.leading, 16)
+                .padding(.vertical, 10)
+                .foregroundStyle(Color.black)
+                
                 Spacer()
-
+                
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.black)
                     .padding(.trailing, 16)
