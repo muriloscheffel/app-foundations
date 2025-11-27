@@ -25,7 +25,7 @@ struct MapView: View {
         
         // Lista de anotações
         let annotations = [
-            Location(name: "Ponto A", coordinate: CLLocationCoordinate2D(latitude: -30.03, longitude: -51.20))
+            Location(name: "PUCRS", coordinate: CLLocationCoordinate2D(latitude: -30.0346471, longitude: -51.2176584))
         ]
     
     var body: some View {
