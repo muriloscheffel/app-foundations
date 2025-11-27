@@ -9,16 +9,17 @@ import CoreLocation
 
 
 struct Estabelecimento: Identifiable {
-    let id = UUID()
-    let name: String
-    let modality: String
-    let image: URL?
-    let endereco: String? = nil
-    let avaliacao: Double? = nil
-    let sobre: String? = nil
-    let horario: String? = nil
-    let oferece: Oferecimentos? = nil
-    let latitude: Double? = nil
-    let longitude: Double? = nil
-    let isFavorite: Bool? = false
+    var id = UUID()
+    var name: String
+    var modality: String
+    var image: URL?
+    var endereco: String?
+    var avaliacao: Double?
+    var sobre: String?
+    var horario: String?
+    var oferece: Oferecimentos?
+    var latitude: Double?
+    var longitude: Double?
+    var isFavorite: Bool = false
+    
 }

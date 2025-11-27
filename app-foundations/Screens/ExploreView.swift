@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 var std: Estabelecimento = Estabelecimento(name: "Studio Zen", modality: "Yoga", image: imageURL)
 
 struct ExploreView: View {
