@@ -11,21 +11,42 @@ struct ModalidadesView: View {
     
     @State private var searchText: String = ""
     
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    var filteredModalidades: [WorkoutActivityType] {
+        if searchText.isEmpty {
+            return WorkoutActivityType.allCases
+        }
+        else {
+            return WorkoutActivityType.allCases.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
+        }
+    }
+    
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                Text("Modalidades")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                SearchBar(text: $searchText)
-                
-                
+        NavigationStack{
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text("Modalidades")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.horizontal)
+                    SearchBar(text: $searchText)
+                    
+                    LazyVGrid(columns: columns, spacing: 8) {
+                        ForEach(filteredModalidades) { modalidade in
+                            ModalidadeButton(modalidade: modalidade)
+                            
+                        }
+                    }
+                    .padding()
+                }
             }
         }
-        .padding()
     }
 }
-
 #Preview {
     ModalidadesView()
 }
