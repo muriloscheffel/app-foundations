@@ -16,6 +16,15 @@ struct Location: Identifiable {
 
 struct MapView: View {
     
+    func getCamPos(x: Double, y: Double) -> MapCameraPosition {
+        return .region(
+            MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: x, longitude: y),
+                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+            )
+        )
+    }
+    
     @State private var cameraPosition: MapCameraPosition = .region(
             MKCoordinateRegion(
                 center: CLLocationCoordinate2D(latitude: -30.0346, longitude: -51.2177),
