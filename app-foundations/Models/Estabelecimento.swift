@@ -17,7 +17,7 @@ struct Estabelecimento: Identifiable {
     var avaliacao: Double?
     var sobre: String?
     var horario: String?
-    var oferece: Oferecimentos?
+    var oferece: [Oferecimentos]?
     var latitude: Double?
     var longitude: Double?
     var isFavorite: Bool = false
