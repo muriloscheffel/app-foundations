@@ -7,11 +7,14 @@
 
 import Foundation
 
-enum WorkoutActivityType: CaseIterable, Codable {
+enum WorkoutActivityType: String, CaseIterable, Codable, Identifiable {
     case basketball, bowling, golf, gymnastics, handball,martialArts, sailing, outdoorSoccer, indoorSoccer,squash, swimming, tableTennis, tennis, traditionalStrengthTraining, volleyball, highIntensityIntervalTraining,boxing, pilates, stepTraining,equestrianSports,iceSkating, mindAndBody,dance
     /*
      Simple mapping of available workout types to a human readable name.
      */
+    
+    var id: String { self.rawValue }
+    
     var name: String {
         switch self {
         case .basketball:                   return "Basquete"
@@ -22,7 +25,7 @@ enum WorkoutActivityType: CaseIterable, Codable {
         case .golf:                         return "Golf"
         case .gymnastics:                   return "Ginástica"
         case .handball:                     return "Handebol"
-        case .highIntensityIntervalTraining:    return " HIIT High Intensity Interval Training"
+        case .highIntensityIntervalTraining:    return "HIIT"
         case .iceSkating:                   return "Patinação"
         case .indoorSoccer:                return "Futsal"
         case .martialArts:                  return "Artes Marciais"
@@ -38,59 +41,56 @@ enum WorkoutActivityType: CaseIterable, Codable {
         case .traditionalStrengthTraining:  return "Academia"
         case .volleyball:                   return "Vôlei"
         }
-        
-        var icon: String {
-            var icon: String {
-                switch self {
-                case .basketball:
-                    return "figure.basketball"
-                case .bowling:
-                    return "figure.bowling"
-                case .golf:
-                    return "figure.golf"
-                case .gymnastics:
-                    return "figure.gymnastics"
-                case .handball:
-                    return "figure.handball"
-                case .martialArts:
-                    return "figure.martial.arts" 
-                case .sailing:
-                    return "figure.sailing"
-                case .outdoorSoccer:
-                    return "figure.soccer"
-                case .indoorSoccer:
-                    return "figure.soccer"
-                case .squash:
-                    return "figure.squash"
-                case .swimming:
-                    return "figure.pool.swim"
-                case .tableTennis:
-                    return "figure.table.tennis"
-                case .tennis:
-                    return "figure.tennis"
-                case .traditionalStrengthTraining:
-                    return "dumbbell.fill"
-                case .volleyball:
-                    return "figure.volleyball"
-                case .highIntensityIntervalTraining:
-                    return "figure.run"
-                case .boxing:
-                    return "figure.boxing"
-                case .pilates:
-                    return "figure.pilates"
-                case .stepTraining:
-                    return "figure.stairs"
-                case .equestrianSports:
-                    return "figure.equestrian.sports"
-                case .iceSkating:
-                    return "figure.skating"
-                case .mindAndBody:
-                    return "figure.yoga"
-                case .dance:
-                    return "figure.dance"
-                }
-                return "figure."+name
-            }
+    }
+    var icon: String {
+        switch self {
+        case .basketball:
+            return "figure.basketball"
+        case .bowling:
+            return "figure.bowling"
+        case .golf:
+            return "figure.golf"
+        case .gymnastics:
+            return "figure.gymnastics"
+        case .handball:
+            return "figure.handball"
+        case .martialArts:
+            return "figure.martial.arts"
+        case .sailing:
+            return "figure.sailing"
+        case .outdoorSoccer:
+            return "figure.soccer"
+        case .indoorSoccer:
+            return "figure.soccer"
+        case .squash:
+            return "figure.squash"
+        case .swimming:
+            return "figure.pool.swim"
+        case .tableTennis:
+            return "figure.table.tennis"
+        case .tennis:
+            return "figure.tennis"
+        case .traditionalStrengthTraining:
+            return "dumbbell.fill"
+        case .volleyball:
+            return "figure.volleyball"
+        case .highIntensityIntervalTraining:
+            return "figure.run"
+        case .boxing:
+            return "figure.boxing"
+        case .pilates:
+            return "figure.pilates"
+        case .stepTraining:
+            return "figure.stairs"
+        case .equestrianSports:
+            return "figure.equestrian.sports"
+        case .iceSkating:
+            return "figure.skating"
+        case .mindAndBody:
+            return "figure.yoga"
+        case .dance:
+            return "figure.dance"
         }
+        return "figure."+name
     }
 }
