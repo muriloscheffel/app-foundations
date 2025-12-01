@@ -77,7 +77,7 @@ struct EstabelecimentoView: View {
                                     Button("", systemImage: estabelecimento.isFavorite ? "heart.fill" : "heart") {
                                         estabelecimento.isFavorite.toggle()
                                     }
-                                    .foregroundStyle(.accent)
+                                    .foregroundStyle(.darkLight)
                                     Text("Marcar/Desmarcar como Favorito")
                                     
                                 }
@@ -98,7 +98,6 @@ struct EstabelecimentoView: View {
                                     
                                     ForEach(estabelecimento.oferece!, id: \.self) { oferta in
                                         OferecimentosView(oferece: oferta)
-                                        
                                     }
                                 }
                                 

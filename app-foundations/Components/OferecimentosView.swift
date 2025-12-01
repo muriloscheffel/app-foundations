@@ -17,7 +17,7 @@ struct OferecimentosView: View {
                 .font(.title2)
                 .frame(width: 30)
                 .accessibilityHidden(true)
-                .foregroundStyle(.accent)
+                .foregroundStyle(.darkLight)
             
             Text(oferece.name)
                 .font(.body)
