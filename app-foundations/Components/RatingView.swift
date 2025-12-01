@@ -14,7 +14,7 @@ struct RatingView: View {
         HStack(spacing: 2) {
             ForEach(0..<5) { index in
                 Image(systemName: starType(for: index))
-                    .foregroundColor(.accent)
+                    .foregroundColor(.darkLight)
             }
         }
     }

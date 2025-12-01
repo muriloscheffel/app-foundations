@@ -33,6 +33,7 @@ struct TabBar: View {
                 }
             }
         }
+        .tint(Color(.darkLight))
     }
 }
 

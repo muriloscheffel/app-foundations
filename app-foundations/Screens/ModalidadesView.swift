@@ -38,7 +38,6 @@ struct ModalidadesView: View {
                     LazyVGrid(columns: columns, spacing: 8) {
                         ForEach(filteredModalidades) { modalidade in
                             ModalidadeButton(modalidade: modalidade)
-                            
                         }
                     }
                     .padding()
