@@ -33,5 +33,5 @@ struct RatingView: View {
 }
 
 #Preview {
-    RatingView(rating: 2.5)
+    RatingView(rating: 3)
 }

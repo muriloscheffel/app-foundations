@@ -11,10 +11,7 @@ import MapKit
 
 struct EstabelecimentoView: View {
     
-    let estabelecimentos: [Estabelecimento] = []
-    
-    @State var estabelecimento: Estabelecimento = Estabelecimento(name: "Studio Zen", modality: "Yoga", image: imageURL, endereco: "PUCRS - Campus Central", avaliacao: 3.5, sobre: "Studio especializado em Hatha e Vinysa Yoga", horario: "Seg-Dom: 08h00 - 20h00", oferece: [.estacionamento, .wifi], latitude: -30.0346471, longitude: -51.2176584)
-    
+    @Binding var estabelecimento: Estabelecimento
     
     @State private var cameraPosition: MapCameraPosition = .camera(.init(.init()))
     
@@ -25,7 +22,7 @@ struct EstabelecimentoView: View {
             // imagem do card
             ZStack(alignment: .top) {
                 
-                if let url = imageURL {
+                if let url = URL(string: estabelecimento.imagem ?? "") {
                     AsyncImage(url: url) { phase in
                         if let image = phase.image {
                             image.resizable()
@@ -54,7 +51,7 @@ struct EstabelecimentoView: View {
                         // conteúdo do card
                         ScrollView {
                             VStack(alignment: .leading, spacing: 15) {
-                                Text(estabelecimento.name + " " + estabelecimento.modality)
+                                Text(estabelecimento.nome + " " + estabelecimento.modalidade)
                                     .font(.largeTitle)
                                     .bold()
                                 
@@ -96,7 +93,9 @@ struct EstabelecimentoView: View {
                                         .font(.title3)
                                         .fontWeight(.semibold)
                                     
-                                    ForEach(estabelecimento.oferece!, id: \.self) { oferta in
+                                    
+                                    
+                                    ForEach(estabelecimento.ofereceToEnum(), id: \.self) { oferta in
                                         OferecimentosView(oferece: oferta)
                                         
                                     }
@@ -122,7 +121,7 @@ struct EstabelecimentoView: View {
                         }
                         .padding()
                         .foregroundStyle(.text)
-//                        .padding(.bottom, 180)
+                        //                        .padding(.bottom, 180)
                     }
                     .padding(.top, 245)
                     .foregroundStyle(.fundo)
@@ -131,9 +130,13 @@ struct EstabelecimentoView: View {
         }
         .ignoresSafeArea()
         .onAppear {
+            
+            let latitude = estabelecimento.latitude ?? 0.0
+            let longitude = estabelecimento.longitude ?? 0.0
+            
             cameraPosition = .region(
                 MKCoordinateRegion(
-                    center: CLLocationCoordinate2D(latitude: estabelecimento.latitude!, longitude: estabelecimento.longitude!),
+                    center: CLLocationCoordinate2D(latitude: latitude, longitude: longitude),
                     span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
                 )
             )
@@ -142,6 +145,6 @@ struct EstabelecimentoView: View {
         //        .offset(y: -100)
     }
 }
-#Preview {
-    EstabelecimentoView()
-}
+//#Preview {
+//    EstabelecimentoView(estabelecimento: estabelecimento)
+//}

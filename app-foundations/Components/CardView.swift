@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-let imageURL = URL(string: "https://pranayogastudio.com.br/wp-content/uploads/2025/05/DSCF0907-HDR-2-1024x683.jpg")
+let imageURL = "https://pranayogastudio.com.br/wp-content/uploads/2025/05/DSCF0907-HDR-2-1024x683.jpg"
+let anotherImageURL = "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F98faf983-c9f1-4868-9494-91e2224c80ff%2Flg_503473fb-d413-44d7-9245-4c8fb54b3d78_f0aed928608742ecb9867819c5accf2b.jpeg&h=360"
 
 struct CardView: View {
     
-    let studio: Estabelecimento
+    let estabelecimento: Estabelecimento
     
     var body: some View {
 
             ZStack(alignment: .bottomLeading) {
-                AsyncImage(url: imageURL) { image in
+                AsyncImage(url: URL(string: estabelecimento.imagem ?? "")) { image in
                     image
                         .resizable()
                         .scaledToFill()
@@ -34,10 +35,10 @@ struct CardView: View {
                 
                 
                 VStack(alignment: .leading) {
-                    Text(studio.name)
+                    Text(estabelecimento.nome)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 20))
-                    Text(studio.modality)
+                    Text(estabelecimento.modalidade)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 12))
                 }
@@ -51,6 +52,6 @@ struct CardView: View {
 }
 
 #Preview {
-    var std: Estabelecimento = Estabelecimento(name: "Studio Zen", modality: "Yoga", image: imageURL)
-    CardView(studio: std)
+    var std: Estabelecimento = Estabelecimento(id: 0, nome: "Studio Zen", modalidade: "Yoga", imagem: imageURL)
+    CardView(estabelecimento: std)
 }

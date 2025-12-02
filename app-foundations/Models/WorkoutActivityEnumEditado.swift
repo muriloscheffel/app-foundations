@@ -91,6 +91,5 @@ enum WorkoutActivityType: String, CaseIterable, Codable, Identifiable {
         case .dance:
             return "figure.dance"
         }
-        return "figure."+name
     }
 }

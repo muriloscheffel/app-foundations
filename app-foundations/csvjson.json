@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "nome": "Gym Fitness",
+        "modalidade": "ACADEMIA",
+        "endereco": "Rua Professor Pedro Santo, R. Prof. Pedro Santa Helena, 360 - Jardim do Salso, Porto Alegre - RS, 91410-150",
+        "horario": "Segunda-feira: 07:00 - 23:00\nTerça-feira: 07:00 - 23:00\nQuarta-feira: 07:00 - 23:00\nQuinta-feira: 07:00 - 23:00\nSexta-feira: 07:00 - 23:00\nSábado: 9:00 - 14:00\nDomingo: Fechado",
+        "sobre": "Na Gym Fitness, nosso diferencial é simples: a gente foca totalmente nos teus resultados. Oferecemos treinos de qualidade, segurança de verdade e profissionais que sabem o que fazem. Tudo isso em um ambiente agradável, para que tu ganhe saúde e bem-estar.",
+        "avaliacao": 4.8,
+        "oferece": "Estacionamento, Armarios, Vestiario",
+        "latitutude": -30.0504433,
+        "longitude": -51.169765,
+        "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F98faf983-c9f1-4868-9494-91e2224c80ff%2Flg_503473fb-d413-44d7-9245-4c8fb54b3d78_f0aed928608742ecb9867819c5accf2b.jpeg&h=360"
+    },
+    {
+        "id": 2,
+        "nome": "Moinhos Fitness - Ipiranga",
+        "modalidade": "ACADEMIA",
+        "endereco": "Av. Ipiranga, 7721 - Partenon, Porto Alegre - RS, 91530-001, Brasil",
+        "horario": "Segunda-feira: 06:00 - 23:00\nTerça-feira: 06:00 - 23:00\nQuarta-feira: 06:00 - 23:00\nQuinta-feira: 06:00 - 23:00\nSexta-feira: 06:00 - 23:00\nSábado: 8:00 - 20:00\nDomingo: Fechado",
+        "sobre": "Localizada a 160m da Praça Tristao Sucupira Vianna, Moinhos Fitness - Ipiranga é a escolha certa para quem procura uma academia completa. Oferece musculação e aulas em grupo, com uma equipe pronta para te ajudar a alcançar seus objetivos",
+        "avaliacao": 4.3,
+        "oferece": "Estacionamento, Armarios, Vestiario, WiFi",
+        "latitutude": -30.0589781,
+        "longitude": -51.1529043,
+        "imagem": ""
+    },
+    {
+        "id": 3,
+        "nome": "26 Fit - Ipiranga",
+        "modalidade": "ACADEMIA",
+        "endereco": "Av. Ipiranga, 8484 - Jardim Botânico, Porto Alegre - RS, 91530-000, Brasil",
+        "horario": "Segunda-feira: 05:00 - 23:00\nTerça-feira: 05:00 - 23:00\nQuarta-feira: 05:00 - 23:00\nQuinta-feira: 05:00 - 23:00\nSexta-feira: 05:00 - 23:00\nSábado: 9:00 - 17:00\nDomingo: 9:00 - 13:00",
+        "sobre": "Localizada na av. Ipiranga, 8484, a 26 Fit - Ipiranga é a escolha certa para quem procura uma academia completa. Oferece musculação, com uma equipe pronta para te ajudar a atingir seus objetivos.",
+        "avaliacao": 3.8,
+        "oferece": "Estacionamento, Armarios, Vestiario, WiFi",
+        "latitutude": -30.0555028,
+        "longitude": -51.1692729,
+        "imagem": ""
+    },
+    {
+        "id": 4,
+        "nome": "Moove Fit",
+        "modalidade": "ACADEMIA",
+        "endereco": "R. Martins de Lima, 77 - São José, Porto Alegre - RS, 91520-000, Brasil",
+        "horario": "Segunda-Feira 7:00 - 22:00 Terça-feira: 07:00 - 22:00\nQuarta-feira: 07:00 - 22:00\nQuinta-feira: 07:00 - 22:00\nSexta-feira: 07:00 - 22:00\nSábado: 9:00 - 15:00\nDomingo: Fechado",
+        "sobre": "Localizada a 500m do Colégio Marista Champagnat, a Moove fit é a escolha certa se você procura uma academia completa. Oferece  pesos livres, musculação, treinamento de força e condicionamento, equilíbrio corporal, treinamento de resistência com peso, abdominal, com uma equipe pronta para ajudá-lo a atingir seus objetivos.",
+        "avaliacao": 4.9,
+        "oferece": "Armarios, Vestiario, WiFi",
+        "latitutude": -30.074512,
+        "longitude": -51.1674603,
+        "imagem": ""
+    },
+    {
+        "id": 5,
+        "nome": "Miudinho Academia",
+        "modalidade": "ACADEMIA",
+        "endereco": "Av. Bento Gonçalves, 4517 - Partenon, Porto Alegre - RS, 90650-002, Brasil",
+        "horario": "Segunda-feira: 05:00 - 23:00\nTerça-feira: 05:00 - 23:00\nQuarta-feira: 05:00 - 23:00\nQuinta-feira: 05:00 - 23:00\nSexta-feira: 05:00 - 23:00\nSábado: 9:00 - 17:00\nDomingo: 9:00 - 13:00",
+        "sobre": "Nosso diferencial é que somos completamente focados em seus resultados, através de serviços de qualidade no segmento de musculação com segurança e profissionais altamente qualificados, em um ambiente agradável, proporcionando qualidade de vida e bem estar ao nossos clientes",
+        "avaliacao": 4.7,
+        "oferece": "Armarios, Vestiario, WiFi",
+        "latitutude": -30.0620208,
+        "longitude": -51.1646451,
+        "imagem": ""
+    },
+    {
+        "id": 6,
+        "nome": "Go Up CT",
+        "modalidade": "ACADEMIA",
+        "endereco": "Av. Bento Gonçalves 4289, 2º e 3º and. Partenon",
+        "horario": "Segunda-feira: 06:00 - 22:00\nTerça-feira: 06:00 - 22:00\nQuarta-feira: 06:00 - 22:00\nQuinta-feira: 06:00 - 22:00\nSexta-feira: 06:00 - 22:00\nSábado: 09:00 - 13:00\nDomingo: Fechado",
+        "sobre": "A Go Up é um espaço moderno e cuidadosamente equipado, desenvolvido para oferecer uma experiência de treinamento de alto nível. Contamos com uma estrutura atualizada, aparelhos de última geração e um ambiente projetado para conforto, segurança e eficiência.\nNossos profissionais são altamente especializados e comprometidos em orientar cada aluno com excelência, garantindo treinos precisos, seguros e alinhados aos objetivos individuais.\nNa Go Up, qualidade, dedicação e profissionalismo se unem para elevar seus resultados.",
+        "avaliacao": 4.7,
+        "oferece": "Armarios, Vestiario, WiFi, Estacionamento",
+        "latitutude": -30.06155,
+        "longitude": -51.17338,
+        "imagem": ""
+    }
+]

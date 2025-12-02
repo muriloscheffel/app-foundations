@@ -7,13 +7,23 @@
 
 import SwiftUI
 
-var std: Estabelecimento = Estabelecimento(name: "Studio Zen", modality: "Yoga", image: imageURL)
 
 struct ExploreView: View {
     
     @State private var searchText: String = ""
     
     @State private var showSettings: Bool = false
+    
+    @State var estabelecimentos: [Estabelecimento] = carregarJSON()
+    
+    private var filteredEstabelecimentos: Binding<[Estabelecimento]> {
+        Binding {
+            estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 })
+        } set: { value in
+            estabelecimentos = value
+        }
+
+    }
     
     var body: some View {
         VStack {
@@ -32,9 +42,17 @@ struct ExploreView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                HStack {
-                    CardView(studio: std)
-                    CardView(studio: std)
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(filteredEstabelecimentos, id: \.self) { $est in
+                            NavigationLink {
+                                EstabelecimentoView(estabelecimento: $est)
+                            } label: {
+                                CardView(estabelecimento: est)
+                            }
+                        }
+                        
+                    }
                 }
             }
             .padding()
@@ -43,6 +61,17 @@ struct ExploreView: View {
                 Text("Favoritos")
                     .font(.title2)
                     .fontWeight(.bold)
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach($estabelecimentos, id: \.self) { $est in
+                            NavigationLink {
+                                EstabelecimentoView(estabelecimento: $est)
+                            } label: {
+                                CardView(estabelecimento: est)
+                            }
+                        }
+                    }
+                }
             }
             .padding()
             
@@ -59,6 +88,9 @@ struct ExploreView: View {
                 }
             }
         }
+//        .onAppear {
+//            estabelecimentos = carregarJSON()
+//        }
     }
 }
 
