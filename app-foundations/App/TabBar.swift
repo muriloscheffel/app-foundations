@@ -27,11 +27,6 @@ struct TabBar: View {
                     ModalidadesView()
                 }
             }
-            Tab("Testes", systemImage: "fireworks") {
-                NavigationStack {
-                    EstabelecimentoView()
-                }
-            }
         }
         .tint(Color("DarkLight"))
     }
