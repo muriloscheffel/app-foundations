@@ -52,6 +52,6 @@ struct CardView: View {
 }
 
 #Preview {
-    var std: Estabelecimento = Estabelecimento(id: 0, nome: "Studio Zen", modalidade: "Yoga", imagem: imageURL)
+    let std: Estabelecimento = Estabelecimento(id: 0, nome: "Studio Zen", modalidade: "Yoga", imagem: imageURL)
     CardView(estabelecimento: std)
 }

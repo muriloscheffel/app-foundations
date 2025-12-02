@@ -18,7 +18,7 @@ struct Estabelecimento: Identifiable, Decodable, Hashable {
     var sobre: String?
     var horario: String?
     var oferece: String?
-    var latitude: Double?
+    var latitutude: Double?
     var longitude: Double?
     var isFavorite: Bool = false
     
@@ -32,7 +32,7 @@ struct Estabelecimento: Identifiable, Decodable, Hashable {
         case sobre
         case horario
         case oferece
-        case latitude
+        case latitutude
         case longitude
     }
     

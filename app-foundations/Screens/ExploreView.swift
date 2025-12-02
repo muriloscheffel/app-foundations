@@ -44,11 +44,11 @@ struct ExploreView: View {
                 
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(filteredEstabelecimentos, id: \.self) { $est in
+                        ForEach(0..<filteredEstabelecimentos.count, id: \.self) { id in
                             NavigationLink {
-                                EstabelecimentoView(estabelecimento: $est)
+                                EstabelecimentoView(estabelecimento: filteredEstabelecimentos[id])
                             } label: {
-                                CardView(estabelecimento: est)
+                                CardView(estabelecimento: filteredEstabelecimentos[id].wrappedValue)
                             }
                         }
                         
@@ -63,11 +63,11 @@ struct ExploreView: View {
                     .fontWeight(.bold)
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach($estabelecimentos, id: \.self) { $est in
+                        ForEach(0..<estabelecimentos.count, id: \.self) { id in
                             NavigationLink {
-                                EstabelecimentoView(estabelecimento: $est)
+                                EstabelecimentoView(estabelecimento: $estabelecimentos[id])
                             } label: {
-                                CardView(estabelecimento: est)
+                                CardView(estabelecimento: estabelecimentos[id])
                             }
                         }
                     }
@@ -81,13 +81,13 @@ struct ExploreView: View {
         .sheet(isPresented: $showSettings, content: {
             Preferencias()
         })
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Configurações", systemImage: "gear") {
-                    showSettings = true
-                }
-            }
-        }
+//        .toolbar {
+//            ToolbarItem(placement: .topBarTrailing) {
+//                Button("Configurações", systemImage: "gear") {
+//                    showSettings = true
+//                }
+//            }
+//        }
 //        .onAppear {
 //            estabelecimentos = carregarJSON()
 //        }

@@ -15,6 +15,9 @@ struct EstabelecimentoView: View {
     
     @State private var cameraPosition: MapCameraPosition = .camera(.init(.init()))
     
+    @State var annotation: Location = Location(name: "", coordinate: CLLocationCoordinate2D.init().self)
+
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -50,8 +53,8 @@ struct EstabelecimentoView: View {
                     .overlay {
                         // conteúdo do card
                         ScrollView {
-                            VStack(alignment: .leading, spacing: 15) {
-                                Text(estabelecimento.nome + " " + estabelecimento.modalidade)
+                            VStack(alignment: .leading, spacing: 25) {
+                                Text(estabelecimento.nome + " - " + estabelecimento.modalidade)
                                     .font(.largeTitle)
                                     .bold()
                                 
@@ -61,13 +64,24 @@ struct EstabelecimentoView: View {
                                     Text("\(String(format: "%.1f", estabelecimento.avaliacao!))")
                                         .font(.subheadline)
                                         .foregroundColor(.gray)
+                                    Spacer()
+                                    Button("", systemImage: estabelecimento.isFavorite ? "heart.fill" : "heart") {
+                                        estabelecimento.isFavorite.toggle()
+                                    }
+                                    .foregroundStyle(.darkLight)
+                                    //.padding(50)
+        
+                                    
                                 }
                                 Text(estabelecimento.endereco!)
                                     .font(.subheadline)
                                 
-                                Text(estabelecimento.horario!)
-                                    .font(.subheadline)
-                                    .foregroundColor(.gray)
+                                DisclosureGroup("Toque para ver os horários") {
+                                    Text(estabelecimento.horario!)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
+                                    
+                                }
                                 
                                 
                                 HStack {
@@ -108,10 +122,11 @@ struct EstabelecimentoView: View {
                                         .fontWeight(.semibold)
                                     
                                     Map(position: $cameraPosition) {
-                                        
+                                        Marker(annotation.name, coordinate: annotation.coordinate)
                                     }
                                     .mapStyle(.standard)
                                     .frame(height: 200)
+                                    .cornerRadius(20)
                                     
                                 }
                             }
@@ -130,7 +145,7 @@ struct EstabelecimentoView: View {
         .ignoresSafeArea()
         .onAppear {
             
-            let latitude = estabelecimento.latitude ?? 0.0
+            let latitude = estabelecimento.latitutude ?? 0.0
             let longitude = estabelecimento.longitude ?? 0.0
             
             cameraPosition = .region(
@@ -139,6 +154,9 @@ struct EstabelecimentoView: View {
                     span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
                 )
             )
+            
+            annotation = Location(name: estabelecimento.nome, coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+            
         }
         //        .cornerRadius(20)
         //        .offset(y: -100)

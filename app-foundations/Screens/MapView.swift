@@ -5,8 +5,8 @@
 //  Created by aluno-15 on 25/11/25.
 //
 
-import SwiftUI
 import MapKit
+import SwiftUI
 
 struct Location: Identifiable {
     let id = UUID()
@@ -15,41 +15,45 @@ struct Location: Identifiable {
 }
 
 struct MapView: View {
-    
-    func getCamPos(x: Double, y: Double) -> MapCameraPosition {
-        return .region(
-            MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: x, longitude: y),
-                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-            )
-        )
-    }
-    
+
+    @State var estabelecimentos: [Estabelecimento] = carregarJSON()
+
+    @State var annotations: [Location] = []
+
     @State private var cameraPosition: MapCameraPosition = .region(
-            MKCoordinateRegion(
-                center: CLLocationCoordinate2D(latitude: -30.0346, longitude: -51.2177),
-                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-            )
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(
+                latitude: -30.0346,
+                longitude: -51.2177
+            ),
+            span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
         )
-        
-        // Lista de anotações
-        let annotations = [
-            Location(name: "PUCRS", coordinate: CLLocationCoordinate2D(latitude: -30.0346471, longitude: -51.2176584))
-        ]
-    
+    )
+
     var body: some View {
         Map(position: $cameraPosition) {
-                    // Adicione anotações (pins) DENTRO do corpo da Map
-                    ForEach(annotations) { location in
-                        // MapMarker foi substituído por Map(Content)Marker no iOS 17+
-                        Marker(location.name, coordinate: location.coordinate)
-                    }
-                }
-                .mapStyle(.standard) // Opcional: Define o estilo do mapa
-                .ignoresSafeArea()
+            // Adicione anotações (pins) DENTRO do corpo da Map
+            ForEach(annotations) { location in
+                // MapMarker foi substituído por Map(Content)Marker no iOS 17+
+                Marker(location.name, coordinate: location.coordinate)
+            }
+        }
+        .mapStyle(.standard)  // Opcional: Define o estilo do mapa
+        .ignoresSafeArea()
+        .onAppear {
+            annotations = estabelecimentos.map {
+                Location(
+                    name: $0.nome,
+                    coordinate: CLLocationCoordinate2D(
+                        latitude: $0.latitutude!,
+                        longitude: $0.longitude!
+                    )
+                )
+            }
+        }
     }
 }
 
-#Preview {
-    MapView()
-}
+//#Preview {
+//    MapView()
+//}

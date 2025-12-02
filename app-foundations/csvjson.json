@@ -23,7 +23,7 @@
         "oferece": "Estacionamento, Armarios, Vestiario, WiFi",
         "latitutude": -30.0589781,
         "longitude": -51.1529043,
-        "imagem": ""
+        "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Ffilename%2F4258720%2Flg_ZqVGadeSqjmnUGDmK1TdZ-qwuwsW8tUc.jpg&h=500"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
         "oferece": "Estacionamento, Armarios, Vestiario, WiFi",
         "latitutude": -30.0555028,
         "longitude": -51.1692729,
-        "imagem": ""
+        "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F623e2c6b-6135-4a73-b573-81a0a54851ce%2Flg_46b17d8f-ba3c-4724-8c91-57ab874d3037_5333762.jpg&h=360"
     },
     {
         "id": 4,
@@ -49,7 +49,7 @@
         "oferece": "Armarios, Vestiario, WiFi",
         "latitutude": -30.074512,
         "longitude": -51.1674603,
-        "imagem": ""
+        "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F7f0f4aa0-7d24-4494-9111-7ab6036cb278%2Flg_5c707ce5-dce1-41ca-9154-ccbe76952d5b_interior3.jpg&h=500"
     },
     {
         "id": 5,
@@ -62,7 +62,7 @@
         "oferece": "Armarios, Vestiario, WiFi",
         "latitutude": -30.0620208,
         "longitude": -51.1646451,
-        "imagem": ""
+        "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F14239%2Flg_e9536378-eaa9-4672-b545-966a37a3510c_WhatsAppImageat...jpeg&h=500"
     },
     {
         "id": 6,
@@ -75,6 +75,6 @@
         "oferece": "Armarios, Vestiario, WiFi, Estacionamento",
         "latitutude": -30.06155,
         "longitude": -51.17338,
-        "imagem": ""
+        "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2Fe080df0d-152e-4cd9-934b-3549131519dc%2Flg_54c01003-41a6-4c57-be07-c63089bdc5f1_WhatsAppImage20241009at10.56.09.jpeg&h=500"
     }
 ]
