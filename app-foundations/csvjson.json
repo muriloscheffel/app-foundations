@@ -101,11 +101,12 @@
     "oferece": "Armarios, Vestiario",
     "latitutude": -30.0400794,
     "longitude": -51.1752681,
-    "imagem": "https://assets-cdn.wellhub.com/images/?su=https://images.partners.gympass.com/image/partners/c8ebc7be-eabd-4ded-ab2b-88f251756af7/lg_b49996b0-f732-4573-88d9-0200c54e410a_5567702.jpg"
+    "imagem":
+    "https://cdn.shopify.com/s/files/1/0629/9697/1571/files/Fuji_20Boxing_20Ring_20and_20Heavy_20Bags_20at_20Progression_20MMA.jpg?v=1733348829"
   },
   {
     "id": 9,
-    "nome": "CT Oliveira Escola de Artes Marciais",
+    "nome": "CT Oliveira",
     "modalidade": "ARTES MARCIAIS",
     "endereco": "Av. Protásio Alves, 2212 - Petrópolis, Porto Alegre - RS, 90410-006, Brasil",
     "horario": "Segunda-feira: 09:00 - 12:00\nSegunda-feira: 15:00 - 21:00\nTerça-feira: 09:00 - 12:00\nTerça-feira: 15:00 - 21:00\nQuarta-feira: 09:00 - 12:00\nQuarta-feira: 15:00 - 21:00\nQuinta-feira: 09:00 - 12:00\nQuinta-feira: 15:00 - 21:00\nSexta-feira: 09:00 - 12:00\nSexta-feira: 15:00 - 21:00\nSábado: 09:00 - 12:00\nDomingo: Fechado",
@@ -114,11 +115,11 @@
     "oferece": "Armarios, Vestiario",
     "latitutude": -30.0434426,
     "longitude": -51.1870362,
-    "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F5f6dad6c-7d04-4e6e-9f5f-ee81911eda8a%2Flg_7fc23f77-3ac7-4020-b903-9f9be43f1738_artepromomesdamulher.jfif&h=500"
+    "imagem": "https://redlinefightsports.com/wp-content/uploads/2022/01/01152022-Redline-034.jpg"
   },
   {
     "id": 10,
-    "nome": "ELLAS Muay Thai",
+    "nome": "Ellas Muay Thai",
     "modalidade": "ARTES MARCIAIS",
     "endereco": "Av. Ijuí, 366 - Petrópolis, Porto Alegre - RS, 90460-200, Brasil",
     "horario": "Segunda-feira: 07:00 - 13:20\nSegunda-feira: 14:00 - 21:10\nTerça-feira: 07:00 - 13:20\nTerça-feira: 14:00 - 21:10\nQuarta-feira: 07:00 - 13:20\nQuarta-feira: 14:00 - 21:10\nQuinta-feira: 07:00 - 13:20\nQuinta-feira: 14:00 - 21:10\nSexta-feira: 07:00 - 13:20\nSexta-feira: 14:00 - 21:10\nSábado: 08:00 - 12:10\nDomingo: Fechado",
@@ -140,7 +141,7 @@
     "oferece": "Armarios, Vestiario, WiFi",
     "latitutude": -30.0540425,
     "longitude": -51.2016508,
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqNZjmGgN3cIqy5RkJMZKoLOTPWT8BSkB9aDt7slhE9mMWdnqbR2v8ZMMOAjDtBY5iKnY&usqp=CAU"
+    "imagem": "https://cdn.shopify.com/s/files/1/0629/9697/1571/files/Fuji_20Boxing_20Ring_20and_20Heavy_20Bags_20at_20Progression_20MMA.jpg?v=1733348829"
   },
   {
     "id": 12,
@@ -153,7 +154,7 @@
     "oferece": "Estacionamento, Armarios, Vestiario, WiFi",
     "latitutude": -30.0269096,
     "longitude": -51.2046543,
-    "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Ffilename%2F4998176%2Flg_RHB7KDDDvV5k0h3jEh-eSgc8MX2WX4oN.jpg&h=500"
+    "imagem": "https://images.totalpass.com/public/1280x720/czM6Ly90cC1pbWFnZS1hZG1pbi1wcm9kL2d5bXMveDRvbmg2MW52ZmtlaDF4ODVvY2V0eW8xaGI4eWFsYmc5aWJzeHdnMnNsY3oybzAyMm5laGR0dm9peTg1"
   },
   {
     "id": 13,
@@ -166,7 +167,7 @@
     "oferece": "Estacionamento, Armarios, Vestiario, WiFi",
     "latitutude": -30.0227423,
     "longitude": -51.2031524,
-    "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2F6733aa4c-f1b4-4d5d-9151-4b5f0bb8e138%2Flg_b1ffe4a9-a464-4e81-b36d-b51117f641a5_IMG04732.JPG&h=500"
+    "imagem": "https://assets-cdn.wellhub.com/images/?su=https://images.partners.gympass.com/image/partners/8befab16-a38c-4926-a348-bb167de637bd/lg_32d235e8-f942-4357-92f9-3fc667c1f30e_ImagemdoWhatsAppde20240927s12.07.42bde3c824.jpg"
   },
   {
     "id": 14,
@@ -183,7 +184,7 @@
   },
   {
     "id": 15,
-    "nome": "Flink Treinamento Integrado",
+    "nome": "Flink Treinamento",
     "modalidade": "TREINO FUNCIONAL",
     "endereco": "Av. Ipiranga, 7464 - Loja 15 - Jardim do Salso, Porto Alegre - RS, 91530-000",
     "horario": "Segunda-feira: 06:30 - 13:30\nSegunda-feira: 15:00 - 21:30\nTerça-feira: 06:30 - 13:30\nTerça-feira: 15:00 - 21:30\nQuarta-feira: 06:30 - 13:30\nQuarta-feira: 15:00 - 21:30\nQuinta-feira: 06:30 - 13:30\nQuinta-feira: 15:00 - 21:30\nSexta-feira: 06:30 - 13:30\nSexta-feira: 15:00 - 20:30\nSábado: 08:30 - 12:30\nDomingo: Fechado",
@@ -192,7 +193,7 @@
     "oferece": "Armarios, Vestiario, WiFi, Estacionamento, Chuveiro",
     "latitutude": -30.055085490641876,
     "longitude": -51.16314976091012,
-    "imagem": "https://assets-cdn.wellhub.com/images/?su=https%3A%2F%2Fimages.partners.gympass.com%2Fimage%2Fpartners%2Fe027dd31-1933-40f0-b9f9-9e658df4c394%2Flg_4745b71c-2ea4-4bbd-8072-d4924f234ca1_CapturadeTela20250818as14.26.39.png&h=500"
+    "imagem": "https://images.squarespace-cdn.com/content/v1/52627348e4b0823534b23503/1606710303942-JTANZBRMRTTS98UQ9GQK/MoveStrong-indoor-design-layout-functional-training.jpeg"
   },
   {
     "id": 16,
@@ -209,7 +210,7 @@
   },
   {
     "id": 17,
-    "nome": "Time Saúde Movimento Funcional",
+    "nome": "Time Saúde Movimento",
     "modalidade": "TREINO FUNCIONAL",
     "endereco": "R. Afonso Rodrigues, 352 - Jardim Botânico, Porto Alegre - RS, 90690-170",
     "horario": "Segunda-feira: 07:00 - 13:00\nSegunda-feira: 16:00 - 21:00\nTerça-feira: 07:00 - 13:00\nTerça-feira: 16:00 - 21:00\nQuarta-feira: 07:00 - 13:00\nQuarta-feira: 16:00 - 21:00\nQuinta-feira: 07:00 - 13:00\nQuinta-feira: 16:00 - 21:00\nSexta-feira: 07:00 - 13:00\nSexta-feira: 16:00 - 21:00\nSábado: Fechado\nDomingo: Fechado",
@@ -244,7 +245,7 @@
     "oferece": "WiFi, Estacionamento, Vestiario, Armario",
     "latitutude": -30.0436149,
     "longitude": -51.1800505,
-    "imagem": "https://static.wixstatic.com/media/ddbcb0_9e34bca7037f4556a40d5d9bd92da943~mv2.jpg/v1/fill/w_2500,h_2023,al_c/ddbcb0_9e34bca7037f4556a40d5d9bd92da943~mv2.jpg"
+    "imagem": "https://images.squarespace-cdn.com/content/v1/67ac3737684f1d77a47bf50d/e65804c7-d531-464e-9e81-5b2b4c6e4563/Room1_004.jpg"
   },
   {
     "id": 20,
@@ -257,7 +258,7 @@
     "oferece": "WiFi, Vestiario, Armario",
     "latitutude": -30.0512592,
     "longitude": -51.1873015,
-    "imagem": "https://static.wixstatic.com/media/ddbcb0_9e34bca7037f4556a40d5d9bd92da943~mv2.jpg/v1/fill/w_2500,h_2023,al_c/ddbcb0_9e34bca7037f4556a40d5d9bd92da943~mv2.jpg"
+    "imagem": "https://musepilates.com.au/wp-content/uploads/2024/09/1A8A6814-Enhanced-NR-scaled.jpg"
   },
   {
     "id": 21,
@@ -283,7 +284,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -29.9907298,
     "longitude": -51.2004093,
-    "imagem": "https://www.rbsdirect.com.br/imagesrc/26213077.jpg?w=1024&h=512&a=c&version=1575255600"
+    "imagem": "https://expansao.co/wp-content/uploads/2023/08/Dunk-Park-edit.jpg"
   },
   {
     "id": 23,
@@ -296,7 +297,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2023/11/WhatsApp-Image-2023-11-06-at-09.52.51.jpeg"
   },
   {
     "id": 24,
@@ -322,7 +323,7 @@
     "oferece": "Estacionamento, Vestiario, Chuveiro, WiFi",
     "latitutude": -30.0463837,
     "longitude": -51.1673201,
-    "imagem": "https://lh3.googleusercontent.com/gg-dl/ABS2GSm28gWY7AU8UrrFPR5YYntfYpievNVCit4T4i2v4z5RFtIr2YQEPfj3D2rp5Jb99bGt9E59pEtHl1Y4oSQnZeTnqSHSFTdsWTmrc3VYUArizHRDvG9Pq9btzZLjNN4CIVB51_CbFSBfs_YldUK82QGoxYq_-4_DyDbylaY6LpuwSQ7CHQ=s1024-rj"
+    "imagem": "https://cdn6.campograndenews.com.br/uploads/noticias/2025/04/22/65071cde5d38a94bb690a2c750003d84bcd78d37.jpg"
   },
   {
     "id": 26,
@@ -335,7 +336,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2017/10/5384443885_3bb0fd6329_b.jpg"
   },
   {
     "id": 27,
@@ -348,7 +349,7 @@
     "oferece": "Estacionamento, Chuveiro, Vestiario",
     "latitutude": -30.0431144,
     "longitude": -51.1814274,
-    "imagem": "https://lh3.googleusercontent.com/gg-dl/ABS2GSlZ6jdEIzuMY2oR0YjJGwpX7I-U62UK_-bSRaCcps4Ump_AYTFgqfzqsqPbI1u_ZtRBjBqZIVBhUfKH6DFtMgLnZtSynCmNrq3KNs0ada59H1_BNGCTWtDiBtMGzEMIYkSnDNDKuaEbgpcCUfXh-58_x7VyfXE4rGkzTXYEIQfXN3jvmA=s1024-rj"
+    "imagem": "https://www.agenciapara.com.br/midias/2023/grandes/up_ag_46947_da24ebfd-3361-76b7-5d54-a6326fe23319.jpg"
   },
   {
     "id": 28,
@@ -361,7 +362,7 @@
     "oferece": "Vestiario, Chuveiro, WiFi",
     "latitutude": -30.0049933,
     "longitude": -51.1824681,
-    "imagem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpereirabarreto.sp.gov.br%2Fnoticias%2Fesporte%2Fdoze-jogos-abrem-a-4a-rodada-do-campeonato-aberto-de-futsal-menor&psig=AOvVaw0ScIqaaj7_-K_2ebXss21b&ust=1764767559762000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCICRi879npEDFQAAAAAdAAAAABAm"
+    "imagem": "https://www.recoma.com.br/blog/wp-content/uploads/2023/02/quadra-de-futsal-qual-o-melhor-piso-esportivo.jpg"
   },
   {
     "id": 29,
@@ -387,7 +388,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2017/10/5207057960_b10e564553_b.jpg"
   },
   {
     "id": 31,
@@ -400,7 +401,7 @@
     "oferece": "Estacionamento, WiFi, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0527875,
     "longitude": -51.1712842,
-    "imagem": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzf39AmKvvrZXbLndXB5UnRruPNBH40BbSZngewhXk6raBUytxCdSybn-LJpBJFCT0NG21GXIAPasHf_GaETrDc2B1QpD06BBrndfingdUC2qjxDcsWsaOlOq9YfVg5qKT9TMNzsw=s680-w680-h510"
+    "imagem": "https://img.freepik.com/premium-photo/amateur-soccer-field-illuminated-night-small-football-field-lit-by-lanterns-evening_251376-1192.jpg"
   },
   {
     "id": 32,
@@ -439,7 +440,7 @@
     "oferece": "Estacionamento, Chuveiro, Vestiario",
     "latitutude": -30.0584042,
     "longitude": -51.1854792,
-    "imagem": "https://www.mini-pitch.com/Content/img/Projects/Minispielfeld-Oscar-Paret-Schule_Freiberg-am-Neckar.jpg"
+    "imagem": "https://img.freepik.com/premium-photo/empty-football-field-night_665346-26074.jpg"
   },
   {
     "id": 35,
@@ -465,7 +466,7 @@
     "oferece": "Vestiario, Chuveiro, Estacionamento, WiFi",
     "latitutude": -30.012772056096647,
     "longitude": -51.15118510219111,
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNNNTPzKLYSNndPU2YxXEzSMn84ZQI0RwxQ&s"
+    "imagem": "https://udcsports.com/wp-content/uploads/2022/08/soccer-field.png"
   },
   {
     "id": 37,
@@ -478,7 +479,7 @@
     "oferece": "Vestiario, Estacionamento, WiFi",
     "latitutude": -30.0299801,
     "longitude": -51.1822354,
-    "imagem": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw_GI9gyanKJr6HkpJ_LEUFohsnY85pw5DfmEdQxNBQUd6FVVcGqmkjGT3s_jbQGhPZRabBa8grwuF5_pKT5Gbch29-ZW0mgrLGCgEaPdY5Slrv3u2Wo5HU_DnJirzIEGDGVU9wsw=s680-w680-h510"
+    "imagem": "https://www.shutterstock.com/image-photo/football-field-amateur-600nw-578464228.jpg"
   },
   {
     "id": 38,
@@ -491,11 +492,11 @@
     "oferece": "Estacionamento, Vestiario, Chuveiro, WiFi",
     "latitutude": -30.0463837,
     "longitude": -51.1673201,
-    "imagem": "https://lh3.googleusercontent.com/gg-dl/ABS2GSm28gWY7AU8UrrFPR5YYntfYpievNVCit4T4i2v4z5RFtIr2YQEPfj3D2rp5Jb99bGt9E59pEtHl1Y4oSQnZeTnqSHSFTdsWTmrc3VYUArizHRDvG9Pq9btzZLjNN4CIVB51_CbFSBfs_YldUK82QGoxYq_-4_DyDbylaY6LpuwSQ7CHQ=s1024-rj"
+    "imagem": "https://altipisos.com.br/wp-content/uploads/2023/07/quadra-de-handebol.jpeg"
   },
   {
     "id": 39,
-    "nome": "HandAction Clube de Handebol",
+    "nome": "HandAction",
     "modalidade": "HANDEBOL",
     "endereco": "Av. Francisco Silveira Bitencourt, 767 - Sarandi, Porto Alegre - RS, 91150-010",
     "horario": "Segunda-feira: 14:30 - 18:00\nTerça-feira: Fechado\nQuarta-feira: 14:30 - 18:00\nQuinta-feira: Fechado\nSexta-feira: Fechado\nSábado: 09:00 - 12:00\nDomingo: Fechado",
@@ -504,7 +505,7 @@
     "oferece": "Estacionamento, WiFi, Vestiario, Chuveiro",
     "latitutude": -29.9921897,
     "longitude": -51.1130598,
-    "imagem": "https://lh3.googleusercontent.com/p/AF1QipP-21Tql82yMfFt0kbSNDi2UTpH5sZSuym58u0h=s680-w680-h510"
+    "imagem": "https://www.qatarhandball2015.com/wp-content/uploads/2025/09/handball-lights-led.jpg"
   },
   {
     "id": 40,
@@ -517,7 +518,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2017/10/5384443885_3bb0fd6329_b.jpg"
   },
   {
     "id": 41,
@@ -530,7 +531,7 @@
     "oferece": "Estacionamento, Vestiario, Chuveiro",
     "latitutude": -30.0556253,
     "longitude": -51.1810109,
-    "imagem": "https://crowall.ca/wp-content/uploads/2022/08/clay-tennis-court.jpg"
+    "imagem": "https://www.recoma.com.br/wp-content/uploads/2019/09/Recomaclay-3-1.jpg"
   },
   {
     "id": 42,
@@ -543,7 +544,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2017/10/5384446153_0840505266_b.jpg"
   },
   {
     "id": 43,
@@ -595,7 +596,7 @@
     "oferece": "Vestiario, Armarios, WiFi",
     "latitutude": -30.0404464,
     "longitude": -51.1782618,
-    "imagem": "https://lh3.googleusercontent.com/p/AF1QipN8zGooQnrnQlcBBDMKvCLbc4Oa4tHR4qtgKMMT=s680-w680-h510"
+    "imagem": "https://collectivehub.com/wp-content/uploads/2017/05/good-vibes-750x500.jpg"
   },
   {
     "id": 47,
@@ -608,11 +609,11 @@
     "oferece": "Armarios, WiFi",
     "latitutude": -30.039984133447923,
     "longitude": -51.18459091574139,
-    "imagem": "https://lh3.googleusercontent.com/p/AF1QipPiHesXtjELChe3PsgTgSXK3Ia3NzntIRVtsnE9=s680-w680-h510"
+    "imagem": "https://www.atelierdurelais.fr/media/2142D59C-DC14-4765-8DD7-A39D97805FD7_1_201_a.jpeg"
   },
   {
     "id": 48,
-    "nome": "Yoga Shala Andréia Turcati",
+    "nome": "Yoga Shala",
     "modalidade": "YOGA",
     "endereco": "Rua Eça de Queiroz, 485 - Petrópolis, Porto Alegre - RS, 90620-070",
     "horario": "Segunda-feira: 09:00 - 20:00\nTerça-feira: 09:00 - 19:30\nQuarta-feira: 09:00 - 20:00\nQuinta-feira: 09:00 - 20:00\nSexta-feira: 09:00 - 19:30\nSábado: Fechado\nDomingo: Fechado",
@@ -621,7 +622,7 @@
     "oferece": "Armarios, WiFi, Estacionamento",
     "latitutude": -30.04893,
     "longitude": -51.1933443,
-    "imagem": "https://lh3.googleusercontent.com/p/AF1QipM3z7zhyu01zsGu3U5A_5RGnHLx_ltuSaK-PpWN=s680-w680-h510"
+    "imagem": "https://thegreenroomyoga.com/wp-content/uploads/2024/12/DSC0477-768x512.jpg"
   },
   {
     "id": 49,
@@ -634,7 +635,7 @@
     "oferece": "WiFi, Estacionamento",
     "latitutude": -30.047154430668698,
     "longitude": -51.19310045806998,
-    "imagem": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxlBQAJpVVyELlrWrV9FTgU2n7M-yBKJz3tcWiNBM1nanWnENh6jIqB1YMgVMWGDTIcBScC2gzYUGupae69RKJAfkeGiQQZrTQKYae5EX3eAXOtfZ0WNVmarl-g2vpzwXOxJM8YNQ=s680-w680-h510"
+    "imagem": "https://media.lesechos.com/api/v1/images/view/62c43c6d3022f909b36c6a9a/1280x720/2370121-unhealthy-monday-zen-mais-en-colere-web-tete-0603974361403.jpg"
   },
   {
     "id": 50,
@@ -647,7 +648,7 @@
     "oferece": "WiFi",
     "latitutude": -30.0429452,
     "longitude": -51.1422856,
-    "imagem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwellhub.com%2Fpt-br%2Fsearch%2Fpartners%2Fprana-yoga-studio%2F&psig=AOvVaw1M6w8dSjCQemzofQWTjT3w&ust=1764769587257000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNiY15SFn5EDFQAAAAAdAAAAABAE"
+    "imagem": "https://images.squarespace-cdn.com/content/v1/5696733025981d28a35ef8ab/3b66a4d9-1dc0-40cc-93d7-dae41e84e0cb/LBC+munich+pop-up+image+2+final+LR.jpg"
   },
   {
     "id": 51,
@@ -676,19 +677,6 @@
     "imagem": "https://www.rbsdirect.com.br/filestore/7/8/6/7/5/3/5_bef0f16c54dc5f0/5357687_7490b84b444ab77.jpg?format=webp&h=408"
   },
   {
-    "id": 53,
-    "nome": "Aquila Natação e Hidroginástica",
-    "modalidade": "NATAÇÃO",
-    "endereco": "R. Graciliano Ramos, 500 - Jardim do Salso, Porto Alegre - RS, 91410-110",
-    "horario": "Segunda-feira: 07:00 - 20:30\nTerça-feira: 07:00 - 20:30\nQuarta-feira: 07:00 - 20:30\nQuinta-feira: 07:00 - 20:30\nSexta-feira: 07:00 - 20:30\nSábado: 8:30 - 12:30\nDomingo: Fechado",
-    "sobre": "Transforme seu bem-estar com aulas de natação para iniciantes e experientes, além de Pilates para fortalecimento, mobilidade e qualidade de vida. Com profissionais qualificados e um ambiente preparado para o seu conforto, oferecemos um atendimento personalizado para que você alcance seus objetivos com segurança e eficiência. Agende sua aula e comece hoje mesmo!",
-    "avaliacao": 4.4,
-    "oferece": "Vestiario, Armarios, Chuveiro",
-    "latitutude": -30.0504339,
-    "longitude": -51.1675345,
-    "imagem": "https://assets-cdn.wellhub.com/images/?su=https://images.partners.gympass.com/image/partners/75d554fd-ec08-4636-bebe-faef7b9ef669/lg_48edd5e7-001f-4f30-947f-dd1e985f955e_00.jpg"
-  },
-  {
     "id": 54,
     "nome": "Parque Esportivo PUCRS",
     "modalidade": "NATAÇÃO",
@@ -699,7 +687,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2017/10/D3301010002004.jpg"
   },
   {
     "id": 55,
@@ -712,7 +700,7 @@
     "oferece": "WiFi, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0341135,
     "longitude": -51.1647744,
-    "imagem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fraiasul.com.br%2Fcategory%2Funcategorized%2Fpage%2F3%2F&psig=AOvVaw02gge_tjs0as6ZxKzqARGf&ust=1764769752264000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMjqguSFn5EDFQAAAAAdAAAAABAE"
+    "imagem": "https://www.fluidra.com/wp-content/uploads/2022/08/shutterstock_56958220_shutterstock_569582201.webp"
   },
   {
     "id": 56,
@@ -725,7 +713,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.040606672793796,
     "longitude": -51.18468032923462,
-    "imagem": "https://www.academiasportcenter.com.br/assets/img/700w/home-nat-inic.png"
+    "imagem": "https://www.brisbane.qld.gov.au/content/dam/brisbanecitycouncil/corpwebsite/parks-and-recreation/images/langlands-pool_10-2048x2048.jpeg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
   },
   {
     "id": 57,
@@ -739,19 +727,6 @@
     "latitutude": -30.0330017,
     "longitude": -51.1695842,
     "imagem": "https://mastersportsacademia.com.br/wp-content/uploads/2019/06/aula-de-natacao-3.png"
-  },
-  {
-    "id": 58,
-    "nome": "Academia All Fit",
-    "modalidade": "NATAÇÃO",
-    "endereco": "R. São Miguel, 235 - Cel. Aparicio Borges, Porto Alegre - RS, 91710-330",
-    "horario": "Segunda-feira: 06:00 - 23:00\nTerça-feira: 06:00 - 23:00\nQuarta-feira: 06:00 - 23:00\nQuinta-feira: 06:00 - 23:00\nSexta-feira: 06:00 - 23:00\nSábado: 8:00 - 14:00\nDomingo: Fechado",
-    "sobre": "Além de todos os benefícios e inúmeras modalidades à sua disposição em cada unidade, após a inscrição, todo Allfitner passa por uma avaliação física, e a cada três meses, reavaliação com troca de treino, visando sempre o seu objetivo. ⁣",
-    "avaliacao": 4.7,
-    "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
-    "latitutude": -30.0734389,
-    "longitude": -51.1921128,
-    "imagem": "https://lavahotsprings.com/wp-content/uploads/2018/02/2lava-indoor-swimming-pool.jpg"
   },
   {
     "id": 59,
@@ -855,7 +830,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.1105887,
     "longitude": -51.2581412,
-    "imagem": "https://www.jangadeiros.com.br/wp-content/uploads/2019/01/Vista-aerea-jangadeiros-3.jpg"
+    "imagem": "https://rumoaomar.org.br/file/2021/05/FOTO-21-Ilha-dos-Jangadeiros.jpg"
   },
   {
     "id": 67,
@@ -881,7 +856,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0960177,
     "longitude": -51.2536289,
-    "imagem": "https://iateclubeguaiba.com.br/wp-content/uploads/2025/04/7897485214_161be119b8_k-1024x575.webp"
+    "imagem": "https://www.yachtclubedabahia.com.br/conteudo/not/001/int/001192.webp"
   },
   {
     "id": 69,
@@ -894,7 +869,7 @@
     "oferece": "Estacionamento, Vestiario",
     "latitutude": -30.0503214,
     "longitude": -51.0649385,
-    "imagem": "https://centrohipicopj.com.br/img/aereopj.png"
+    "imagem": "https://images.adsttc.com/media/images/556d/073d/e58e/ce95/6600/00b9/large_jpg/PG169_3.jpg?1433208615"
   },
   {
     "id": 70,
@@ -907,20 +882,7 @@
     "oferece": "Estacionamento, Vestiario, WiFi",
     "latitutude": -30.162800360953806,
     "longitude": -51.18558121573845,
-    "imagem": "https://shpa.com.br/wp-content/uploads/2023/08/20230729_111332-768x432.jpg"
-  },
-  {
-    "id": 71,
-    "nome": "Escola de Equitação Cristal",
-    "modalidade": "HIPISMO",
-    "endereco": "R. Santuário - Belém Velho, Porto Alegre - RS, 91712-701",
-    "horario": "Segunda-feira: 08:00 - 18:00\nTerça-feira: 08:00 - 18:00\nQuarta-feira: 08:00 - 18:00\nQuinta-feira: 08:00 - 18:00\nSexta-feira: 08:00 - 18:00\nSábado: 08:00 - 12:00\nDomingo: 08:00 - 12:00",
-    "sobre": "Escola de Equitação Cristal foi fundada em 1 de dezembro de 1975 por Sílvio Quadros. Inicialmente localizada no Jockey Club de Porto Alegre, se mudou para Rua Santuário, atual localização da hípica. A EEC há mais de 40 anos vêm se destacando no hipismo gaúcho, ensinando futuros cavaleiros e amazonas Tradição e seriedade no trabalho são uma marca da família Quadros. Gilseia Quadros, é a professora das turmas de escola (ambiente onde se aprende a equitação). A Equipe Cristal conta com o profissional Cristiano Quadros de Castro, também sobrinho e membro desta grande família, sendo o instrutor de alunos proprietários (com cavalos próprios) e orientando nas competições.",
-    "avaliacao": 5,
-    "oferece": "Estacionamento, Vestiario, WiFi",
-    "latitutude": -30.0968113,
-    "longitude": -51.1780816,
-    "imagem": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxNs8yovwjRo0pAduW7U51Bgv83cWayI6lIQsVq91cH3iHkQvV859m536FxqdwTXpIyF4pO-OukP6rje0OZ7OURPZ_G82BK2upHSGVS_NH5lJEdpPCJ9tbqrogU42Vrx7yt5N1Q=s680-w680-h510"
+    "imagem": "https://www.integracaobahia.com.br/v1/wp-content/uploads/2022/01/Casa-das-Raças-Tatui-1024x768.jpg"
   },
   {
     "id": 72,
@@ -933,7 +895,7 @@
     "oferece": "Estacionamento, Vestiario, WiFi",
     "latitutude": -30.1637454,
     "longitude": -51.1786273,
-    "imagem": "https://lh3.googleusercontent.com/p/AF1QipP5YwbZ4x1gUSVKznmtwIhdqgYhBMjrwfRN4Sch=s680-w680-h510"
+    "imagem": "https://chlacan.com.br/wp-content/uploads/2015/07/Estrutura-Centro-Hipico-Lacan-4-1024x768.jpg"
   },
   {
     "id": 73,
@@ -946,7 +908,7 @@
     "oferece": "Estacionamento, Vestiario",
     "latitutude": -30.163311139586362,
     "longitude": -51.17138854457384,
-    "imagem": "https://www.ribeiraonet.com/wp-content/uploads/2022/09/arquivo-de-imagens-aereas-com-drone-motorpark-haras-tuiuti.jpeg"
+    "imagem": "https://www.nelsonkon.com.br/wp-content/uploads/2018/12/mauro_munhoz_centro_hipico_polana_mmuhp_01.jpg"
   },
   {
     "id": 74,
@@ -959,7 +921,7 @@
     "oferece": "Estacionamento, Vestiario, WiFi",
     "latitutude": -30.148687480156465,
     "longitude": 51.1787542734098,
-    "imagem": "https://lh3.googleusercontent.com/gg-dl/ABS2GSmf4aUkKVrV1rYEwbVblwat7X35inR0ZTl6Q0JhgCV7rWFuYzan_sTbzniM4aD-h8WDLFU7yFnJuqi9qptppGFyA-BZKM_ltEJqn_PKbToIvOsnKTg9yHXVjelAmYFR0SL7PfvNeb5y7CypBg2Xa2VSyFCNNYrjhx8eIdta1eqVJgqiwQ=s1024-rj"
+    "imagem": "https://tatuicidadeternura.com.br/wp-content/uploads/2022/08/Hipica-2.jpg"
   },
   {
     "id": 75,
@@ -1011,7 +973,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.009651416929408,
     "longitude": -51.18809234642552,
-    "imagem": "https://www.extraclasse.org.br/wp-content/uploads/2020/12/Dívida-ameaça-patrimônio-a-Sociedade-Ginástica-Porto-Alegre.jpg"
+    "imagem": "https://www.sogipa.com.br/site/img/placeholder.webp"
   },
   {
     "id": 79,
@@ -1024,7 +986,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.021822902191506,
     "longitude": -51.198035102248056,
-    "imagem": "https://www.gnu.com.br/uploads/blocos/a-mais-antiga-das-tres-sedes-unionistas-esta-localizada-no-coracao-do-bairro-moinhos-de-vento1654610525.webp"
+    "imagem": "https://www.gnu.com.br/uploads/blocos/o-ginasio-poliesportivo-que-recebe-diferentes-modalidades-esportivas1681323482.webp"
   },
   {
     "id": 80,
@@ -1037,7 +999,7 @@
     "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
     "latitutude": -30.0567478,
     "longitude": -51.1734041,
-    "imagem": "https://uma.arq.br/wp-content/uploads/2020/03/area_convivencia_puc-1.png"
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2021/07/foto_academia_3.png"
   },
   {
     "id": 81,
@@ -1050,7 +1012,7 @@
     "oferece": "WiFi",
     "latitutude": -30.040050884282604,
     "longitude": -51.1933784869058,
-    "imagem": "https://www.jornaldocomercio.com/_midias/jpg/2025/11/06/536x430/1_20251105_213726-11517275.jpg"
+    "imagem": "https://5.imimg.com/data5/SELLER/Default/2023/5/309581843/BY/RH/XQ/6690323/bowling-alley-equipment.jpg"
   },
   {
     "id": 82,
@@ -1089,11 +1051,11 @@
     "oferece": "WiFi",
     "latitutude": -30.021613965514188,
     "longitude": -51.16238010039958,
-    "imagem": "https://www.rbsdirect.com.br/filestore/3/1/6/5/9/3/5_64553877e24089c/5395613_e60a300935bd7b2.jpg?format=webp&w=1600&h=1600&a=c"
+    "imagem": "https://destinopoa.com.br/wp-content/uploads/2025/09/LOOF-Enrique-Javier-Salgado-2-1024x683.webp"
   },
   {
     "id": 85,
-    "nome": "Arte & Conceito - Espaço de Dança e Saúde",
+    "nome": "Arte & Conceito",
     "modalidade": "DANÇA",
     "endereco": "R. Dr. Salvador França, 1253 - Jardim Botânico, Porto Alegre - RS, 90690-000",
     "horario": "Segunda-feira: 10:00 - 22:00\nTerça-feira: 10:00 - 22:00\nQuarta-feira: 10:00 - 22:00\nQuinta-feira: 10:00 - 22:00\nSexta-feira: 10:00 - 22:00\nSábado: 10:00 - 22:00\nDomingo: 10:00 - 16:00",
@@ -1102,7 +1064,7 @@
     "oferece": "WiFi, Estacionamento",
     "latitutude": -30.052456169236404,
     "longitude": -51.18099108690538,
-    "imagem": "https://media.istockphoto.com/id/1184816480/pt/foto/dance-or-ballet-studio-interior-3d-illustration.jpg?s=612x612&w=0&k=20&c=GfiiKtsL5hvmVZFN_gK0FfrptdLJuqEExZKuqaqNqWo="
+    "imagem": "https://images.squarespace-cdn.com/content/v1/55a618b8e4b0cad16bcc9c9f/1600299386677-AC7N3Z49374VPVGTROE3/studio+a+.jpg"
   },
   {
     "id": 86,
@@ -1119,7 +1081,7 @@
   },
   {
     "id": 87,
-    "nome": "Cabriolle Studio de Dança - Escola de Dança Porto Alegre",
+    "nome": "Cabriolle Studio de Dança",
     "modalidade": "DANÇA",
     "endereco": "Av. Teixeira Mendes, 528 - Sala 202 - Três Figueiras, Porto Alegre - RS, 91330-390",
     "horario": "Segunda-feira: 09:00 - 22:00\nTerça-feira: 09:00 - 22:00\nQuarta-feira: 09:00 - 22:00\nQuinta-feira: 09:00 - 22:00\nSexta-feira: 09:00 - 22:00\nSábado: 9:00 - 18:00\nDomingo: Fechado",
@@ -1142,19 +1104,6 @@
     "latitutude": -30.03386355094317,
     "longitude": -51.16517987341232,
     "imagem": "https://lh3.googleusercontent.com/proxy/kpJuTCZhcW68c1w3nreVgP4kJoLhnjgC4v6SIbIvJSq65cw62XKnbIk1HRMMTIamggKjH6H_kBkU40Aet1dg0GkSAUx7VBRceWKeePeM5zSd8Nk5njE"
-  },
-  {
-    "id": 91,
-    "nome": "Studio Dance Paulo Pinheiro",
-    "modalidade": "DANÇA",
-    "endereco": "R. Valparaíso, 776 - Jardim Botânico, Porto Alegre - RS, 90690-300",
-    "horario": "Segunda-feira: 14:00 - 21:00\nTerça-feira: 14:00 - 21:00\nQuarta-feira: 14:00 - 21:00\nQuinta-feira: 14:00 - 21:00\nSexta-feira: 14:00 - 21:00\nSábado: 14:00 - 18:00\nDomingo: Fechado",
-    "sobre": "O Studio de Dança Paulo Pinheiro, trabalha com Coreografias Personalizadas tornando seu evento ainda mais especial!",
-    "avaliacao": 4.3,
-    "oferece": "WiFi, Estacionamento, Armarios",
-    "latitutude": -30.053755587780245,
-    "longitude": -51.18660364457615,
-    "imagem": "https://studiopaulopinheiro.com.br/wp-content/uploads/2022/10/sala2.jpeg"
   },
   {
     "id": 90,
@@ -1297,7 +1246,7 @@
     "oferece": "",
     "latitutude": -30.051650437690036,
     "longitude": -51.23120801951189,
-    "imagem": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-W5Ky8z6DD5zcVNNe3V_d9FnqSHrL_MiP4j3jFuGURnlgWXxW7lky7N-TptydZBWUWyNV47r6V25SReB4D16kAFUoGTrx8hTbIcFAxWlN8DrsV7W88vSrhTKNb1eMRYccjvaw3nunGRK7fEtKuN0KEdb93_R4oK3fxcPi5Rp5we_8R0th497J99zIhg/s1000/poa.jpg"
+    "imagem": "https://www.rbsdirect.com.br/imagesrc/35584008.jpg?version=1575255600"
   },
   {
     "id": 101,
@@ -1313,16 +1262,16 @@
     "imagem": "https://www.fountainblu.com/uploads/b/af258320-cdcf-11ea-8c33-2b589f09a310/Rink%20Back%20side%20revos.jpg"
   },
   {
-    "id": 102,
-    "nome": "AABB Porto Alegre",
-    "modalidade": "Patinação",
-    "endereco": "Av. Cel. Marcos, 1000 - Pedra Redonda, Porto Alegre - RS, 91760-000",
-    "horario": "Segunda-feira: 08:00 - 23:00\nTerça-feira: 08:00 - 23:00\nQuarta-feira: 08:00 - 23:00\nQuinta-feira: 08:00 - 23:00\nSexta-feira: 08:00 - 23:00\nSábado: 09:00 - 17:00\nDomingo: 09:00 - 13:00",
-    "sobre": "A AABB Porto Alegre é um clube social e esportivo que oferece uma ampla gama de atividades e serviços para seus associados. Localizada em um espaço privilegiado, conta com piscinas, quadras esportivas, academia, salão de jogos, restaurante e salões de festas.",
-    "avaliacao": 4.7,
-    "oferece": "WiFi, Estacionamento, Vestiario, Armarios, Chuveiro",
-    "latitutude": -30.1239293776883,
-    "longitude": -51.245673315739175,
-    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3nIvq5Dz7tvKn53NsK1oJMt-YRKi-ExERLw&s"
+    "id": 40,
+    "nome": "Parque Esportivo PUCRS",
+    "modalidade": "Vôlei",
+    "endereco": "Av. Ipiranga, 6690 - Partenon, RS, 90619-900",
+    "horario": "Segunda-feira: 07:00 - 22:00\nTerça-feira: 07:00 - 22:00\nQuarta-feira: 07:00 - 22:00\nQuinta-feira: 07:00 - 22:00\nSexta-feira: 07:00 - 22:00\nSábado: 8:00 - 15:00\nDomingo: Fechado",
+    "sobre": "O Parque Esportivo tem toda a sua atuação pensada para acolher e incentivar a sociedade para um futuro mais saudável. E foi pensando nisso que trouxemos para Porto Alegre um novo conceito de academia, que através da tecnologia, da inovação e qualificação dos nossos profissionais, fornece uma experiência única na prática de atividades físicas. Acreditamos que quando as pessoas dão mais atenção para o bem-estar físico e mental o mundo se torna um lugar melhor. E é esse essencial que norteia tudo que fazemos e passaremos a fazer, sempre com a missão de acolher as pessoas e incentivar que elas cuidem de sua saúde de forma INTEGRAL.",
+    "avaliacao": 4.8,
+    "oferece": "WiFi, Estacionamento, Chuveiro, Vestiario, Armarios",
+    "latitutude": -30.0567478,
+    "longitude": -51.1734041,
+    "imagem": "https://www.pucrs.br/parqueesportivo/wp-content/uploads/sites/294/2017/10/5384443885_3bb0fd6329_b.jpg"
   }
 ]

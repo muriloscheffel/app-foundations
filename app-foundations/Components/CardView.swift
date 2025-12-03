@@ -37,7 +37,7 @@ struct CardView: View {
                 VStack(alignment: .leading) {
                     Text(estabelecimento.nome)
                         .foregroundStyle(.white)
-                        .font(Font.system(size: 20))
+                        .font(Font.system(size: 16))
                     Text(estabelecimento.modalidade)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 12))

@@ -22,7 +22,7 @@ struct EstabelecimentoModalidadeView: View {
             VStack(spacing: 12) {
                 ForEach(filtrados) { estabelecimento in
                     NavigationLink {
-                        EstabelecimentoView(estabelecimento: .constant(estabelecimento))
+                        EstabelecimentoView(estabelecimento: (estabelecimento))
                     } label: {
                         CardViewLongo(estabelecimento: estabelecimento)
                     }

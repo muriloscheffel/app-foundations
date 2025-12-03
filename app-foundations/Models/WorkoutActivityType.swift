@@ -8,7 +8,7 @@
 import Foundation
 
 enum WorkoutActivityType: String, CaseIterable, Codable, Identifiable {
-    case basketball, bowling, golf, gymnastics, handball,martialArts, sailing, outdoorSoccer, indoorSoccer,squash, swimming, tableTennis, tennis, traditionalStrengthTraining, volleyball, highIntensityIntervalTraining,boxing, pilates, stepTraining,equestrianSports,iceSkating, mindAndBody,dance
+    case basketball, bowling, golf, gymnastics, handball,martialArts, sailing, outdoorSoccer, indoorSoccer,squash, swimming, tableTennis, tennis, traditionalStrengthTraining, volleyball, highIntensityIntervalTraining, pilates, stepTraining,equestrianSports,iceSkating, mindAndBody,dance
     /*
      Simple mapping of available workout types to a human readable name.
      */
@@ -19,9 +19,8 @@ enum WorkoutActivityType: String, CaseIterable, Codable, Identifiable {
         switch self {
         case .basketball:                   return "Basquete"
         case .bowling:                      return "Boliche"
-        case .boxing:                       return "Boxe"
         case .dance:                        return "Dança"
-        case .equestrianSports:             return "Equestrian Sports"
+        case .equestrianSports:             return "Hipismo"
         case .golf:                         return "Golf"
         case .gymnastics:                   return "Ginástica"
         case .handball:                     return "Handebol"
@@ -71,13 +70,12 @@ enum WorkoutActivityType: String, CaseIterable, Codable, Identifiable {
         case .tennis:
             return "figure.tennis"
         case .traditionalStrengthTraining:
-            return "dumbbell.fill"
+            return "figure.walk.treadmill"
+            // caso queiram o alter de volta return "dumbbell.fill"
         case .volleyball:
             return "figure.volleyball"
         case .highIntensityIntervalTraining:
             return "figure.run"
-        case .boxing:
-            return "figure.boxing"
         case .pilates:
             return "figure.pilates"
         case .stepTraining:

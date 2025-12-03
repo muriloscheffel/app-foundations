@@ -20,11 +20,12 @@ struct ModalidadesView: View {
     ]
     
     var filteredModalidades: [WorkoutActivityType] {
+        let todasOrdenadas = WorkoutActivityType.allCases.sorted { $0.name < $1.name }
+        
         if searchText.isEmpty {
-            return WorkoutActivityType.allCases
-        }
-        else {
-            return WorkoutActivityType.allCases.filter {
+            return todasOrdenadas
+        } else {
+            return todasOrdenadas.filter {
                 $0.name.localizedCaseInsensitiveContains(searchText)
             }
         }
