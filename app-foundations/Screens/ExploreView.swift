@@ -22,7 +22,22 @@ struct ExploreView: View {
         } set: { value in
             estabelecimentos = value
         }
-
+    }
+    
+    @State private var mostraEstabelecimentosFavoritos: Bool = false
+    
+    var estabelecimentosFavoritos: Binding<[Estabelecimento]> {
+        
+        Binding(
+            get: {
+                return estabelecimentos.filter { $0.isFavorite == true }
+                
+            },
+            
+            set: { newValue in
+                estabelecimentos = newValue
+            }
+        )
     }
     
     var body: some View {
@@ -63,11 +78,11 @@ struct ExploreView: View {
                     .fontWeight(.bold)
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(0..<estabelecimentos.count, id: \.self) { id in
+                        ForEach(0..<estabelecimentosFavoritos.count, id: \.self) { id in
                             NavigationLink {
-                                EstabelecimentoView(estabelecimento: $estabelecimentos[id])
+                                EstabelecimentoView(estabelecimento: estabelecimentosFavoritos[id])
                             } label: {
-                                CardView(estabelecimento: estabelecimentos[id])
+                                CardView(estabelecimento: estabelecimentosFavoritos[id].wrappedValue)
                             }
                         }
                     }
@@ -81,16 +96,16 @@ struct ExploreView: View {
         .sheet(isPresented: $showSettings, content: {
             Preferencias()
         })
-//        .toolbar {
-//            ToolbarItem(placement: .topBarTrailing) {
-//                Button("Configurações", systemImage: "gear") {
-//                    showSettings = true
-//                }
-//            }
-//        }
-//        .onAppear {
-//            estabelecimentos = carregarJSON()
-//        }
+        //        .toolbar {
+        //            ToolbarItem(placement: .topBarTrailing) {
+        //                Button("Configurações", systemImage: "gear") {
+        //                    showSettings = true
+        //                }
+        //            }
+        //        }
+        //        .onAppear {
+        //            estabelecimentos = carregarJSON()
+        //        }
     }
 }
 

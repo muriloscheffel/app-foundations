@@ -64,14 +64,6 @@ struct EstabelecimentoView: View {
                                     Text("\(String(format: "%.1f", estabelecimento.avaliacao!))")
                                         .font(.subheadline)
                                         .foregroundColor(.gray)
-                                    Spacer()
-                                    Button("", systemImage: estabelecimento.isFavorite ? "heart.fill" : "heart") {
-                                        estabelecimento.isFavorite.toggle()
-                                    }
-                                    .foregroundStyle(.darkLight)
-                                    //.padding(50)
-        
-                                    
                                 }
                                 Text(estabelecimento.endereco!)
                                     .font(.subheadline)
