@@ -7,16 +7,20 @@
 
 import SwiftUI
 import MapKit
+import SwiftData
 
 
 struct EstabelecimentoView: View {
     
-    @Binding var estabelecimento: Estabelecimento
+    var estabelecimento: Estabelecimento
     
     @State private var cameraPosition: MapCameraPosition = .camera(.init(.init()))
     
     @State var annotation: Location = Location(name: "", coordinate: CLLocationCoordinate2D.init().self)
-
+    
+    @Query var idEstabsFavs: [EstabelecimentoData]
+    
+    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -77,8 +81,16 @@ struct EstabelecimentoView: View {
                                 
                                 
                                 HStack {
-                                    Button("", systemImage: estabelecimento.isFavorite ? "heart.fill" : "heart") {
-                                        estabelecimento.isFavorite.toggle()
+                                    Button("", systemImage: idEstabsFavs.contains { $0.id == estabelecimento.id } ? "heart.fill" : "heart") {
+                                        let est = EstabelecimentoData(id: estabelecimento.id)
+                                        if(!idEstabsFavs.contains(est)) {
+                                            modelContext.insert(est)
+                                        } else {
+                                            let estIsFav = idEstabsFavs.first(where: { $0.id == estabelecimento.id })!
+                                            modelContext.delete(estIsFav)
+                                        }
+                                        try? modelContext.save()
+                                        //                                        estabelecimento.isFavorite.toggle()
                                     }
                                     .foregroundStyle(.darkLight)
                                     Text("Marcar/Desmarcar como Favorito")
