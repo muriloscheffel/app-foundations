@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 
 struct ExploreView: View {
@@ -14,31 +15,24 @@ struct ExploreView: View {
     
     @State private var showSettings: Bool = false
     
-    @State var estabelecimentos: [Estabelecimento] = carregarJSON()
+    var estabelecimentos: [Estabelecimento] = carregarJSON()
     
-    private var filteredEstabelecimentos: Binding<[Estabelecimento]> {
-        Binding {
-            estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 })
-        } set: { value in
-            estabelecimentos = value
+    @Query var idEstabsFavs: [EstabelecimentoData]
+    
+    private var estabelecimentosFavoritas: [Estabelecimento] {
+        let favIDs = Set(idEstabsFavs.map { $0.id })
+        return estabelecimentos.filter { favIDs.contains($0.id) }
+    }
+    
+    var filteredModalidades: [Estabelecimento] {
+        if searchText.isEmpty {
+            return []
+        }
+        else {
+            return estabelecimentos.filter { $0.nome.localizedCaseInsensitiveContains(searchText)}
         }
     }
     
-    @State private var mostraEstabelecimentosFavoritos: Bool = false
-    
-    var estabelecimentosFavoritos: Binding<[Estabelecimento]> {
-        
-        Binding(
-            get: {
-                return estabelecimentos.filter { $0.isFavorite == true }
-                
-            },
-            
-            set: { newValue in
-                estabelecimentos = newValue
-            }
-        )
-    }
     
     var body: some View {
         VStack {
@@ -59,11 +53,11 @@ struct ExploreView: View {
                 
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(0..<filteredEstabelecimentos.count, id: \.self) { id in
+                        ForEach(estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 }), id: \.self) { est in
                             NavigationLink {
-                                EstabelecimentoView(estabelecimento: filteredEstabelecimentos[id])
+                                EstabelecimentoView(estabelecimento: est)
                             } label: {
-                                CardView(estabelecimento: filteredEstabelecimentos[id].wrappedValue)
+                                CardView(estabelecimento: est)
                             }
                         }
                         
@@ -78,11 +72,11 @@ struct ExploreView: View {
                     .fontWeight(.bold)
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(0..<estabelecimentosFavoritos.count, id: \.self) { id in
+                        ForEach(0..<estabelecimentosFavoritas.count, id: \.self) { id in
                             NavigationLink {
-                                EstabelecimentoView(estabelecimento: estabelecimentosFavoritos[id])
+                                EstabelecimentoView(estabelecimento: estabelecimentosFavoritas[id])
                             } label: {
-                                CardView(estabelecimento: estabelecimentosFavoritos[id].wrappedValue)
+                                CardView(estabelecimento: estabelecimentosFavoritas[id])
                             }
                         }
                     }

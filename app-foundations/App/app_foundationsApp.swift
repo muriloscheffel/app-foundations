@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct app_foundationsApp: App {
@@ -13,5 +14,6 @@ struct app_foundationsApp: App {
         WindowGroup {
             TabBar()
         }
+        .modelContainer(for: EstabelecimentoData.self)
     }
 }

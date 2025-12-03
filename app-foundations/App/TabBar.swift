@@ -25,7 +25,7 @@ struct TabBar: View {
                 }
             }
             
-            Tab("Modalidades", systemImage: "magnifyingglass") {
+            Tab("Modalidades", systemImage: "figure.stand") {
                 NavigationStack {
                     ModalidadesView()
                 }
