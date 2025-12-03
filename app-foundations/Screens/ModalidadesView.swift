@@ -11,6 +11,9 @@ struct ModalidadesView: View {
     
     @State private var searchText: String = ""
     
+    // carrega todos os estabelecimentos
+    @State private var estabelecimentos: [Estabelecimento] = carregarJSON()
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -21,7 +24,9 @@ struct ModalidadesView: View {
             return WorkoutActivityType.allCases
         }
         else {
-            return WorkoutActivityType.allCases.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
+            return WorkoutActivityType.allCases.filter {
+                $0.name.localizedCaseInsensitiveContains(searchText)
+            }
         }
     }
     
@@ -33,12 +38,19 @@ struct ModalidadesView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .padding(.horizontal)
+                    
                     SearchBar(text: $searchText)
                     
                     LazyVGrid(columns: columns, spacing: 8) {
                         ForEach(filteredModalidades) { modalidade in
-                            ModalidadeButton(modalidade: modalidade)
-                            
+                            NavigationLink {
+                                EstabelecimentoModalidadeView(
+                                    modalidade: modalidade,
+                                    estabelecimentos: estabelecimentos
+                                )
+                            } label: {
+                                ModalidadeButton(modalidade: modalidade)
+                            }
                         }
                     }
                     .padding()
@@ -47,6 +59,7 @@ struct ModalidadesView: View {
         }
     }
 }
+
 #Preview {
     ModalidadesView()
 }

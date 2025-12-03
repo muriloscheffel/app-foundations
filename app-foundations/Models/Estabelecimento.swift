@@ -7,7 +7,6 @@
 
 import CoreLocation
 
-
 struct Estabelecimento: Identifiable, Decodable, Hashable {
     var id: Int
     var nome: String
@@ -37,15 +36,24 @@ struct Estabelecimento: Identifiable, Decodable, Hashable {
     }
     
     func ofereceToEnum() -> [Oferecimentos] {
-        let splitedOfere = oferece?.split(separator: ",")
-        var ofere: [Oferecimentos] = []
+        guard let splitedOfere = oferece?.split(separator: ",") else {
+            return []
+        }
         
-        if let splitedOfere {
-            for value in splitedOfere {
-                ofere.append(Oferecimentos(rawValue: String(value).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))!)
+        var ofereList: [Oferecimentos] = []
+        
+        for value in splitedOfere {
+            let trimmed = value
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+                .capitalized
+            
+            if let oferecimento = Oferecimentos(rawValue: trimmed) {
+                ofereList.append(oferecimento)
+            } else {
+                print("Valor inválido no JSON para Oferecimentos: '\(trimmed)'")
             }
         }
         
-        return ofere
+        return ofereList
     }
 }
