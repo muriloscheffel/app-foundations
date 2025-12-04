@@ -38,7 +38,7 @@ struct CardView: View {
                     Text(estabelecimento.nome)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 16))
-                    Text(estabelecimento.modalidade)
+                    Text(estabelecimento.workoutType?.nameEnglish ?? estabelecimento.modalidade)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 12))
                 }

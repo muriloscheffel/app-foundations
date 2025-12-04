@@ -57,3 +57,9 @@ struct Estabelecimento: Identifiable, Decodable, Hashable {
         return ofereList
     }
 }
+
+extension Estabelecimento {
+    var workoutType: WorkoutActivityType? {
+        WorkoutActivityType(rawValue: modalidade)
+    }
+}

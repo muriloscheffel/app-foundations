@@ -41,6 +41,34 @@ enum WorkoutActivityType: String, CaseIterable, Codable, Identifiable {
         case .volleyball:                   return "Vôlei"
         }
     }
+    
+    var nameEnglish: String {
+        switch self {
+        case .basketball: return "Basketball"
+        case .bowling: return "Bowling"
+        case .golf: return "Golf"
+        case .gymnastics: return "Gymnastics"
+        case .handball: return "Handball"
+        case .martialArts: return "Martial Arts"
+        case .sailing: return "Sailing"
+        case .outdoorSoccer: return "Soccer"
+        case .indoorSoccer: return "Indoor Soccer"
+        case .squash: return "Squash"
+        case .swimming: return "Swimming"
+        case .tableTennis: return "Table Tennis"
+        case .tennis: return "Tennis"
+        case .traditionalStrengthTraining: return "Strength Training"
+        case .volleyball: return "Volleyball"
+        case .highIntensityIntervalTraining: return "HIIT"
+        case .pilates: return "Pilates"
+        case .stepTraining: return "Step Training"
+        case .equestrianSports: return "Equestrian Sports"
+        case .iceSkating: return "Roller Skating"
+        case .mindAndBody: return "Yoga"
+        case .dance: return "Dance"
+        }
+    }
+    
     var icon: String {
         switch self {
         case .basketball:

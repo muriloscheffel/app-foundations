@@ -36,7 +36,7 @@ struct CardViewLongo: View {
                     Text(estabelecimento.nome)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 20))
-                    Text(estabelecimento.modalidade)
+                    Text(estabelecimento.workoutType?.nameEnglish ?? estabelecimento.modalidade)
                         .foregroundStyle(.white)
                         .font(Font.system(size: 12))
                 }
