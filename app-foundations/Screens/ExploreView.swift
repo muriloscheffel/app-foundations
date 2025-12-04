@@ -24,12 +24,12 @@ struct ExploreView: View {
         return estabelecimentos.filter { favIDs.contains($0.id) }
     }
     
-    var filteredModalidades: [Estabelecimento] {
+    var filteredEst: [Estabelecimento] {
         if searchText.isEmpty {
             return []
         }
         else {
-            return estabelecimentos.filter { $0.nome.localizedCaseInsensitiveContains(searchText)}
+            return estabelecimentos.filter { $0.nome.localizedCaseInsensitiveContains(searchText) }
         }
     }
     
@@ -46,39 +46,17 @@ struct ExploreView: View {
             }
             .padding()
             
-            VStack (alignment: .leading, spacing: 16){
-                Text("Em Alta")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 })
-                            .prefix(10),
-                                id: \.self) { est in
-                            NavigationLink {
-                                EstabelecimentoView(estabelecimento: est)
-                            } label: {
-                                CardView(estabelecimento: est)
-                            }
-                        }
-                    }
-                }
-            }
-            .padding()
-            
-            VStack(alignment: .leading, spacing: 16) {
-                Text("Favoritos")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                
-                if estabelecimentosFavoritas.isEmpty {
-                    Text("Você ainda não favoritou nenhum lugar.")
-                        .foregroundColor(.gray)
-                } else {
+            if searchText.isEmpty {
+                VStack (alignment: .leading, spacing: 16){
+                    Text("Em Alta")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach(estabelecimentosFavoritas, id: \.id) { est in
+                            ForEach(estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 })
+                                .prefix(10),
+                                    id: \.self) { est in
                                 NavigationLink {
                                     EstabelecimentoView(estabelecimento: est)
                                 } label: {
@@ -88,8 +66,46 @@ struct ExploreView: View {
                         }
                     }
                 }
+                .padding()
+                
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("Favoritos")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    
+                    if estabelecimentosFavoritas.isEmpty {
+                        Text("Você ainda não favoritou nenhum lugar.")
+                            .foregroundColor(.gray)
+                    } else {
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach(estabelecimentosFavoritas, id: \.id) { est in
+                                    NavigationLink {
+                                        EstabelecimentoView(estabelecimento: est)
+                                    } label: {
+                                        CardView(estabelecimento: est)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .padding()
+            } else {
+                VStack(alignment: .leading, spacing: 16) {
+                    ScrollView {
+                        LazyVStack(spacing: 12) {
+                            ForEach(filteredEst, id: \.self) { est in
+                                NavigationLink {
+                                    EstabelecimentoView(estabelecimento: est)
+                                } label: {
+                                    CardViewLongo(estabelecimento: est)
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            .padding()
             
             Spacer()
         }
