@@ -42,6 +42,7 @@ struct MapView: View {
                     Button("", systemImage: "pin.circle.fill") {
                         selectedEstabelecimento = estabelecimento
                     }
+                    .foregroundStyle(.red)
                 }
             }
         }
