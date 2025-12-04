@@ -82,15 +82,17 @@ struct EstabelecimentoView: View {
                                 
                                 HStack {
                                     Button("", systemImage: idEstabsFavs.contains { $0.id == estabelecimento.id } ? "heart.fill" : "heart") {
-                                        let est = EstabelecimentoData(id: estabelecimento.id)
-                                        if(!idEstabsFavs.contains(est)) {
-                                            modelContext.insert(est)
-                                        } else {
-                                            let estIsFav = idEstabsFavs.first(where: { $0.id == estabelecimento.id })!
+                                        
+                                        if let estIsFav = idEstabsFavs.first(where: { $0.id == estabelecimento.id }) {
+                                            // Já é favorito → remover
                                             modelContext.delete(estIsFav)
+                                        } else {
+                                            // Não é favorito → adicionar
+                                            let novoFav = EstabelecimentoData(id: estabelecimento.id)
+                                            modelContext.insert(novoFav)
                                         }
+                                        
                                         try? modelContext.save()
-                                        //                                        estabelecimento.isFavorite.toggle()
                                     }
                                     .foregroundStyle(.darkLight)
                                     Text("Marcar/Desmarcar como Favorito")
