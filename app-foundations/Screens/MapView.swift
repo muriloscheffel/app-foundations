@@ -18,7 +18,8 @@ struct MapView: View {
 
     @State var estabelecimentos: [Estabelecimento] = carregarJSON()
 
-    @State var annotations: [Location] = []
+//    @State var annotations: [Location] = []
+    @State private var selectedEstabelecimento: Estabelecimento?
 
     @State private var cameraPosition: MapCameraPosition = .region(
         MKCoordinateRegion(
@@ -32,25 +33,34 @@ struct MapView: View {
 
     var body: some View {
         Map(position: $cameraPosition) {
-            // Adicione anotações (pins) DENTRO do corpo da Map
-            ForEach(annotations) { location in
-                // MapMarker foi substituído por Map(Content)Marker no iOS 17+
-                Marker(location.name, coordinate: location.coordinate)
+            
+            ForEach(estabelecimentos) { estabelecimento in
+                
+                let location = CLLocationCoordinate2D(latitude: estabelecimento.latitutude ?? 0.0, longitude: estabelecimento.longitude ?? 0.0)
+                
+                Annotation(estabelecimento.nome, coordinate: location) {
+                    Button("", systemImage: "pin.circle.fill") {
+                        selectedEstabelecimento = estabelecimento
+                    }
+                }
             }
         }
         .mapStyle(.standard)  // Opcional: Define o estilo do mapa
         .ignoresSafeArea()
-        .onAppear {
-            annotations = estabelecimentos.map {
-                Location(
-                    name: $0.nome,
-                    coordinate: CLLocationCoordinate2D(
-                        latitude: $0.latitutude!,
-                        longitude: $0.longitude!
-                    )
-                )
-            }
+        .navigationDestination(item: $selectedEstabelecimento) { estabelecimento in
+            EstabelecimentoView(estabelecimento: estabelecimento)
         }
+//        .onAppear {
+//            annotations = estabelecimentos.map {
+//                Location(
+//                    name: $0.nome,
+//                    coordinate: CLLocationCoordinate2D(
+//                        latitude: $0.latitutude!,
+//                        longitude: $0.longitude!
+//                    )
+//                )
+//            }
+//        }
     }
 }
 
