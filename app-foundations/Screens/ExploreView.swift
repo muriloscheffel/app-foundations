@@ -35,7 +35,7 @@ struct ExploreView: View {
     
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 0) {
             VStack (alignment: .leading, spacing: 16){
                 Text("Descubra")
                     .font(.title2)
@@ -53,30 +53,37 @@ struct ExploreView: View {
                 
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 }), id: \.self) { est in
+                        ForEach(estabelecimentos.sorted(by: { ($0.avaliacao) ?? 0.0 > ($1.avaliacao) ?? 0.0 })
+                            .prefix(10),
+                                id: \.self) { est in
                             NavigationLink {
                                 EstabelecimentoView(estabelecimento: est)
                             } label: {
                                 CardView(estabelecimento: est)
                             }
                         }
-                        
                     }
                 }
             }
             .padding()
             
-            VStack (alignment: .leading, spacing: 16){
+            VStack(alignment: .leading, spacing: 16) {
                 Text("Favoritos")
                     .font(.title2)
                     .fontWeight(.bold)
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(0..<estabelecimentosFavoritas.count, id: \.self) { id in
-                            NavigationLink {
-                                EstabelecimentoView(estabelecimento: estabelecimentosFavoritas[id])
-                            } label: {
-                                CardView(estabelecimento: estabelecimentosFavoritas[id])
+                
+                if estabelecimentosFavoritas.isEmpty {
+                    Text("Você ainda não favoritou nenhum lugar.")
+                        .foregroundColor(.gray)
+                } else {
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(estabelecimentosFavoritas, id: \.id) { est in
+                                NavigationLink {
+                                    EstabelecimentoView(estabelecimento: est)
+                                } label: {
+                                    CardView(estabelecimento: est)
+                                }
                             }
                         }
                     }
@@ -85,8 +92,9 @@ struct ExploreView: View {
             .padding()
             
             Spacer()
-            
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        
         .sheet(isPresented: $showSettings, content: {
             Preferencias()
         })
