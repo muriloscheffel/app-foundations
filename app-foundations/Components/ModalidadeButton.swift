@@ -1,10 +1,3 @@
-//
-//  ModalidadeButton.swift
-//  app-foundations
-//
-//  Created by aluno-03 on 28/11/25.
-//
-
 import SwiftUI
 
 struct ModalidadeButton: View {
@@ -12,9 +5,7 @@ struct ModalidadeButton: View {
     var modalidade: WorkoutActivityType
     
     var body: some View {
-        
         VStack(alignment: .leading) {
-            
             Image(systemName: modalidade.icon)
                 .resizable()
                 .scaledToFit()
@@ -23,20 +14,15 @@ struct ModalidadeButton: View {
                 .padding(.leading, 16)
                 .padding(.top, 16)
             
-            Text(modalidade.name)
-                .foregroundStyle(.white)
-                .font(Font.system(size: 20))
+            Text(modalidade.nameEnglish)   // 👈 usa o enum, não estabelecimento
+                .font(.system(size: 20))
                 .foregroundColor(.white)
                 .padding(.leading, 16)
                 .padding(.bottom, 16)
         }
         .frame(width: 180, height: 80, alignment: .leading)
-        .background(Color(.accent))
+        .background(Color.accentColor)     // ou Color("Accent") se tiver no Assets
         .cornerRadius(16)
-        
-        
-        
-        
     }
 }
 
