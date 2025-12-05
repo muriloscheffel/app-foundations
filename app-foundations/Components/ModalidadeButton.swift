@@ -14,14 +14,14 @@ struct ModalidadeButton: View {
                 .padding(.leading, 16)
                 .padding(.top, 16)
             
-            Text(modalidade.nameEnglish)   // 👈 usa o enum, não estabelecimento
+            Text(modalidade.nameEnglish)
                 .font(.system(size: 20))
                 .foregroundColor(.white)
                 .padding(.leading, 16)
                 .padding(.bottom, 16)
         }
         .frame(width: 180, height: 80, alignment: .leading)
-        .background(Color.accentColor)     // ou Color("Accent") se tiver no Assets
+        .background(Color.accent)
         .cornerRadius(16)
     }
 }
